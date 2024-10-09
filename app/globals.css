@@ -24,6 +24,7 @@
 
   --red: #e04124;
   --black: #000000;
+  --black-111: #111111;
   --white: #ffffff;
 }
 
@@ -31,6 +32,10 @@ body {
   color: var(--black);
   background: var(--white);
   font-family: "Sora", sans-serif;
+}
+
+.playball {
+  font-family: "Playball", cursive;
 }
 
 @layer utilities {

@@ -26,6 +26,8 @@ const config: Config = {
         "light-gray-3": "var(--light-gray-3)",
 
         "red-1": "var(--red-1)",
+
+        "black-111": "var(--black-111)",
       },
     },
   },
