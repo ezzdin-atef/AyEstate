@@ -1,4 +1,4 @@
-import { Header } from "@/components/feature/header";
+import { Header } from "@/components/common/header";
 import type { Metadata } from "next";
 import "./globals.css";
 

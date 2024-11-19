@@ -7,6 +7,9 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      roboto: ["Roboto", "sans-serif"],
+    },
     extend: {
       colors: {
         "primary-1": "var(--primary-1)",

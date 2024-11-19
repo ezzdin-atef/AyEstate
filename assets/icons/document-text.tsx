@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export const DocuemntTextIcon = (props: React.SVGProps<SVGSVGElement>) => (
+export const DocumentTextIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     width={32}
     height={32}
