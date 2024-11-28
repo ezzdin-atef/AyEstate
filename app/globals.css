@@ -44,3 +44,22 @@ body {
     text-wrap: balance;
   }
 }
+
+.details summary {
+  list-style: none;
+  position: relative;
+}
+.details summary::after {
+  content: "\2014";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.details summary::-webkit-details-marker {
+  display: none;
+}
+
+.header:has(+ .home-hero) {
+  @apply lg:bg-[#F6F3F3];
+}

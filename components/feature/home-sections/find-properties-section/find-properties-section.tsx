@@ -13,14 +13,14 @@ export const FindPropertiesSection = () => {
       <div className="container mx-auto px-5">
         {/* Header Section */}
         <div className="mb-12 text-center">
-          <p className="text-base font-semibold text-black mb-3">Find</p>
-          <h1 className="text-[32px] font-bold text-black mb-5">Properties</h1>
-          <p className="text-base text-black leading-6">
+          <p className="mb-3 text-base font-semibold text-black">Find</p>
+          <h1 className="mb-5 text-[32px] font-bold text-black">Properties</h1>
+          <p className="text-base leading-6 text-black">
             Explore our curated list of properties and find your dream home.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+        <div className="mb-10 grid grid-cols-2 gap-6 lg:grid-cols-4">
           {[
             {
               id: 1,
@@ -69,25 +69,25 @@ export const FindPropertiesSection = () => {
               key={property.id}
               className="flex flex-col items-center rounded-lg"
             >
-              <div className="overflow-hidden mb-5 w-full">
+              <div className="mb-5 w-full overflow-hidden">
                 <Image
                   src={property.imageSrc}
                   alt={property.title}
                   width={320}
                   height={200}
-                  className="object-cover w-full h-[200px]"
+                  className="h-[200px] w-full rounded-xl object-cover lg:h-[380px]"
                 />
               </div>
               <h3 className="text-base font-semibold text-black">
                 {property.title}
               </h3>
-              <p className="text-sm text-gray-500 mb-2">{property.subtitle}</p>
-              <p className="text-lg font-semibold text-black mb-4">
+              <p className="mb-2 text-sm text-gray-500">{property.subtitle}</p>
+              <p className="mb-4 text-lg font-semibold text-black">
                 {property.price}
               </p>
               <Link
                 href="/property-details"
-                className="text-sm font-semibold text-black border border-primary-1 px-4 py-2 rounded-xl hover:bg-gray-50"
+                className="rounded-xl border border-black px-4 py-2 text-sm font-semibold text-black hover:bg-gray-50 lg:w-full lg:text-center"
               >
                 View Details
               </Link>
@@ -98,7 +98,7 @@ export const FindPropertiesSection = () => {
         <div className="text-center">
           <Link
             href="#"
-            className="h-12 inline-flex justify-center items-center bg-primary-1 font-semibold text-black-111 rounded-xl py-3 px-6"
+            className="inline-flex h-12 items-center justify-center rounded-xl bg-primary-1 px-6 py-3 font-semibold text-black-111 lg:hidden"
           >
             Learn More
           </Link>

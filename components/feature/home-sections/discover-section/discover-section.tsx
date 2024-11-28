@@ -5,12 +5,14 @@ export const DiscoverSection = () => {
   return (
     <section className="bg-white py-[50px]">
       <div className="container mx-auto px-5">
-        <div className="mb-12">
-          <h4 className="font-semibold mb-3">Discover</h4>
-          <h2 className="font-bold text-[32px] leading-tight mb-5">
-            Find Your Dream Property with Us
-          </h2>
-          <p className="font-normal text-sm">
+        <div className="mb-12 grid-cols-2 lg:grid">
+          <div>
+            <h4 className="mb-3 font-semibold">Discover</h4>
+            <h2 className="mb-5 flex text-[32px] font-bold leading-tight lg:flex-col lg:text-[48px] lg:leading-[58px]">
+              <span>Find Your Dream</span> <span>Property with Us</span>
+            </h2>
+          </div>
+          <p className="text-sm font-normal lg:text-lg">
             At our real estate agency, we offer a range of services to help you
             with your property needs. Whether you&apos;re looking to buy, sell,
             or get a valuation, our experienced team is here to assist you every
@@ -18,7 +20,7 @@ export const DiscoverSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 mb-6">
+        <div className="mb-6 grid grid-cols-1 gap-6 lg:grid-cols-3">
           <DiscoverCard
             title="Property Buying and Selling"
             description="We provide expert guidance for buying and selling properties, ensuring a smooth and successful transaction."
@@ -32,11 +34,11 @@ export const DiscoverSection = () => {
             description="Get expert advice on real estate investment strategies to maximize your returns."
           />
         </div>
-        <div className="flex mt-4 gap-6">
-          <button className="h-12 flex justify-center items-center bg-primary-1 font-semibold text-black-111 rounded-xl py-3 px-6">
+        <div className="mt-4 flex gap-6 lg:mt-14">
+          <button className="flex h-12 items-center justify-center rounded-xl bg-primary-1 px-6 py-3 font-semibold text-black-111">
             Learn More
           </button>
-          <button className="h-12 flex justify-center items-center gap-2 text-black font-normal">
+          <button className="flex h-12 items-center justify-center gap-2 font-normal text-black">
             Contact <ArrowRight />
           </button>
         </div>

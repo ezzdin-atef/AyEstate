@@ -4,11 +4,13 @@ import React from "react";
 
 export default function TestimonialsSection() {
   return (
-    <div className="bg-[#FFEEEE] text-center py-[50px]">
-      <div className="container mx-auto px-5 flex flex-col gap-6 items-center">
-        <h2 className="text-2xl font-bold">Customer Testimonials</h2>
+    <div className="bg-[#FFEEEE] py-[50px] text-center">
+      <div className="container mx-auto flex flex-col items-center gap-6 px-5">
+        <h2 className="text-2xl font-bold lg:text-[48px] lg:leading-[58px]">
+          Customer Testimonials
+        </h2>
         <div className="">
-          <span className="gap-1 flex">
+          <span className="flex gap-1">
             {[...Array(5)].map((el, index) => (
               <svg
                 key={index}
@@ -26,21 +28,23 @@ export default function TestimonialsSection() {
             ))}
           </span>
         </div>
-        <p className="font-bold text-xl">
+        <p className="text-xl font-bold lg:max-w-3xl lg:text-2xl">
           Our experience with this real estate website design has been nothing
           short of amazing. The team was professional, responsive, and delivered
           beyond our expectations.
         </p>
-        <div className="">
+        <div className="lg:flex lg:items-center lg:gap-4 lg:text-left">
           <Image
             src={ceoAvatar}
             alt="John Doe"
-            className="mb-4 mx-auto"
+            className="mx-auto mb-4"
             width={56}
             height={56}
           />
-          <p className="font-semibold">John Doe</p>
-          <p className="">CEO, ABC Realty</p>
+          <div>
+            <p className="font-semibold">John Doe</p>
+            <p className="">CEO, ABC Realty</p>
+          </div>
         </div>
       </div>
     </div>
