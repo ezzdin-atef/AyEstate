@@ -3,23 +3,25 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#111111] py-[50px] text-white">
+    <footer className="bg-[#111111] py-[50px] text-white lg:pb-0 lg:pt-[100px]">
       <div className="container mx-auto px-5">
-        <div className="grid grid-cols-2 gap-8 pt-5 lg:grid-cols-6">
-          <div className="col-span-2 w-full border-b border-[#2E334B] pb-5 lg:border-b-0">
-            <h2 className="playball text-[28px]">AyEstate</h2>
-            <div className="mt-5">
+        <div className="grid grid-cols-2 gap-[30px] pt-5 lg:grid-cols-6">
+          <div className="col-span-2 w-full border-b border-[#2E334B] pb-[30px] lg:border-b-0">
+            <h2 className="playball text-[32px]">AyEstate</h2>
+            <div className="mt-4 lg:mt-[34px]">
               <p className="text-[#7F879E]">hello.ayestate@example.com</p>
               <p className="text-[#7F879E]">(+1) 2345 6789</p>
             </div>
-            <p className="mt-5 flex flex-col text-[#7F879E]">
+            <p className="mt-5 flex flex-col text-[#7F879E] lg:mt-6">
               <span>4140 Parker Rd. Allentown,</span>
               <span>New Mexico 31134</span>
             </p>
           </div>
           <div className="w-full">
-            <h3 className="mb-2 font-bold text-white">Pages</h3>
-            <ul className="flex flex-col gap-2 text-[#7F879E]">
+            <h3 className="mb-4 font-bold text-white lg:mb-8 lg:text-lg">
+              Pages
+            </h3>
+            <ul className="flex flex-col gap-3 text-sm text-[#7F879E] lg:text-lg">
               <li className="">
                 <Link href="#" className="">
                   Listings
@@ -39,8 +41,10 @@ export default function Footer() {
           </div>
 
           <div className="w-full">
-            <h3 className="mb-2 font-bold text-white">Support</h3>
-            <ul className="flex flex-col gap-2 text-[#7F879E]">
+            <h3 className="mb-4 font-bold text-white lg:mb-8 lg:text-lg">
+              Support
+            </h3>
+            <ul className="flex flex-col gap-3 text-sm text-[#7F879E] lg:text-lg">
               <li className="">
                 <Link href="#" className="">
                   Properties
@@ -59,9 +63,11 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="w-full">
-            <h3 className="mb-2 font-bold text-white">Legal</h3>
-            <ul className="flex flex-col gap-2 text-[#7F879E]">
+          <div className="w-full lg:hidden">
+            <h3 className="mb-4 font-bold text-white lg:mb-8 lg:text-lg">
+              Legal
+            </h3>
+            <ul className="flex flex-col gap-3 text-sm text-[#7F879E] lg:text-lg">
               <li className="">
                 <Link href="#" className="">
                   Terms of Services
@@ -85,9 +91,39 @@ export default function Footer() {
             </ul>
           </div>
 
+          <div className="hidden w-full lg:block">
+            <h3 className="mb-4 font-bold text-white lg:mb-8 lg:text-lg">
+              Webflow Stuff
+            </h3>
+            <ul className="flex flex-col gap-3 text-sm text-[#7F879E] lg:text-lg">
+              <li className="">
+                <Link href="#" className="">
+                  Style Guide
+                </Link>
+              </li>
+              <li className="">
+                <Link href="#" className="">
+                  Changelog
+                </Link>
+              </li>
+              <li className="">
+                <Link href="#" className="">
+                  Licensing
+                </Link>
+              </li>
+              <li className="">
+                <Link href="#" className="">
+                  Instructions
+                </Link>
+              </li>
+            </ul>
+          </div>
+
           <div className="w-full">
-            <h3 className="mb-2 font-bold text-white">Platform</h3>
-            <ul className="flex flex-col gap-2 text-[#7F879E]">
+            <h3 className="mb-4 font-bold text-white lg:mb-8 lg:text-lg">
+              Platform
+            </h3>
+            <ul className="flex flex-col gap-3 text-sm text-[#7F879E] lg:text-lg">
               <li className="">
                 <Link href="#" className="">
                   Desktop App
@@ -101,7 +137,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <p className="hidden pt-6 text-center text-[#F3F3F3] lg:block lg:text-lg">
+        <p className="hidden pt-6 text-center text-[#F3F3F3] lg:block lg:py-8 lg:text-lg">
           Copyright © AyEstate | Designed by AY Studio
         </p>
       </div>

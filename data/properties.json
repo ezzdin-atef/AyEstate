@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "imageSrc": "/images/listing/1.jpg",
+    "title": "Luxury Villa",
+    "subtitle": "Oceanfront",
+    "price": "$1,000,000"
+  },
+  {
+    "id": 2,
+    "imageSrc": "/images/listing/2.jpg",
+    "title": "Chill Apartment",
+    "subtitle": "City Center",
+    "price": "$500,000"
+  },
+  {
+    "id": 3,
+    "imageSrc": "/images/listing/3.jpg",
+    "title": "Cozy Cottage",
+    "subtitle": "Mountain View",
+    "price": "$300,000"
+  },
+  {
+    "id": 4,
+    "imageSrc": "/images/listing/4.jpg",
+    "title": "Spacious Condo",
+    "subtitle": "Beachfront",
+    "price": "$700,000"
+  },
+  {
+    "id": 5,
+    "imageSrc": "/images/listing/5.jpg",
+    "title": "Luxury Penthouse",
+    "subtitle": "Downtown",
+    "price": "$1,500,000"
+  },
+  {
+    "id": 6,
+    "imageSrc": "/images/listing/6.jpg",
+    "title": "Lakefront Retreat",
+    "subtitle": "Lake View",
+    "price": "$800,000"
+  },
+  {
+    "id": 7,
+    "imageSrc": "/images/listing/7.jpg",
+    "title": "Luxury Penthouse",
+    "subtitle": "Downtown",
+    "price": "$1,500,000"
+  },
+  {
+    "id": 8,
+    "imageSrc": "/images/listing/8.jpg",
+    "title": "Lakefront Retreat",
+    "subtitle": "Lake View",
+    "price": "$800,000"
+  }
+]

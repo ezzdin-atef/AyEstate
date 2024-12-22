@@ -1,3 +1,4 @@
+import Button from "@/components/ui/button";
 import Link from "next/link";
 
 export const InnovativeSection = () => {
@@ -6,7 +7,7 @@ export const InnovativeSection = () => {
       <div className="container mx-auto px-5">
         <div className="mb-12 grid-cols-2 gap-10 lg:grid">
           <div>
-            <p className="mb-3 text-base font-semibold">Innovative</p>
+            <p className="mb-3 text-base font-semibold lg:mb-4">Innovative</p>
             <h1 className="mb-5 text-[32px] font-bold leading-10 lg:max-w-2xl lg:text-[48px] lg:leading-[58px]">
               Transforming the Real Estate Industry with Excellence
             </h1>
@@ -18,28 +19,36 @@ export const InnovativeSection = () => {
               satisfaction is our top priority.
             </p>
             <div className="text-center lg:text-left">
-              <Link
+              <Button
+                as={Link}
+                variant="primary"
                 href="/learn-more"
-                className="inline-flex h-12 items-center justify-center rounded-xl bg-primary-1 px-6 py-3 font-semibold text-black-111"
+                className="inline-flex"
               >
                 Learn More
-              </Link>
+              </Button>
             </div>
           </div>
         </div>
 
         <div className="space-y-8 lg:grid lg:grid-cols-3 lg:space-y-0">
           <div className="flex flex-col gap-2 border-l-2 pl-8">
-            <p className="font-roboto text-[56px] font-bold">30%</p>
-            <p className="text-lg font-bold">Success Rate</p>
+            <p className="font-roboto text-[56px] font-bold lg:text-[80px]">
+              30% 
+            </p>
+            <p className="text-lg font-bold lg:text-xl">Success Rate</p>
           </div>
           <div className="flex flex-col gap-2 border-l-2 pl-8">
-            <p className="font-roboto text-[56px] font-bold">30%</p>
-            <p className="text-lg font-bold">Properties Listed</p>
+            <p className="font-roboto text-[56px] font-bold lg:text-[80px]">
+              30%
+            </p>
+            <p className="text-lg font-bold lg:text-xl">Properties Listed</p>
           </div>
           <div className="flex flex-col gap-2 border-l-2 pl-8">
-            <p className="font-roboto text-[56px] font-bold">30%</p>
-            <p className="text-lg font-bold">Client Satisfaction</p>
+            <p className="font-roboto text-[56px] font-bold lg:text-[80px]">
+              30%
+            </p>
+            <p className="text-lg font-bold lg:text-xl">Client Satisfaction</p>
           </div>
         </div>
       </div>

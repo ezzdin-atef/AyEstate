@@ -5,8 +5,8 @@ import React from "react";
 export default function TestimonialsSection() {
   return (
     <div className="bg-[#FFEEEE] py-[50px] text-center">
-      <div className="container mx-auto flex flex-col items-center gap-6 px-5">
-        <h2 className="text-2xl font-bold lg:text-[48px] lg:leading-[58px]">
+      <div className="container mx-auto flex flex-col items-center gap-6 px-5 lg:gap-8">
+        <h2 className="text-2xl font-bold lg:pb-[18px] lg:text-[48px] lg:leading-[58px]">
           Customer Testimonials
         </h2>
         <div className="">
@@ -33,7 +33,7 @@ export default function TestimonialsSection() {
           short of amazing. The team was professional, responsive, and delivered
           beyond our expectations.
         </p>
-        <div className="lg:flex lg:items-center lg:gap-4 lg:text-left">
+        <div className="lg:flex lg:items-center lg:gap-5 lg:text-left">
           <Image
             src={ceoAvatar}
             alt="John Doe"
@@ -45,7 +45,7 @@ export default function TestimonialsSection() {
             <p className="font-semibold">John Doe</p>
             <p className="">CEO, ABC Realty</p>
           </div>
-        </div>
+        </div> 
       </div>
     </div>
   );

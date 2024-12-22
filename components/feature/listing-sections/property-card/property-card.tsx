@@ -1,8 +1,15 @@
-import properityImage1 from "@/assets/images/listing-1.png";
+import { HeartIcon } from "@/assets/icons";
 import Image from "next/image";
 import React from "react";
 
-export default function PropertyCard() {
+interface Props {
+  image: string;
+  title: string;
+  type: string;
+  location: string;
+}
+
+export default function PropertyCard(props: Props) {
   return (
     <div>
       <div className="relative mb-2 max-h-[300px] lg:max-h-[400px]">
@@ -10,39 +17,24 @@ export default function PropertyCard() {
           Featured
         </span>
         <button className="absolute right-2 top-2 rounded-full bg-[#FFFFFFBF] p-1 lg:right-6 lg:top-4 lg:p-2">
-          <svg
-            viewBox="0 0 12 12"
-            className="h-3 w-3 lg:h-5 lg:w-5"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M6.31 10.405C6.14 10.465 5.86 10.465 5.69 10.405C4.24 9.91005 1 7.84505 1 4.34505C1 2.80005 2.245 1.55005 3.78 1.55005C4.69 1.55005 5.495 1.99005 6 2.67005C6.505 1.99005 7.315 1.55005 8.22 1.55005C9.755 1.55005 11 2.80005 11 4.34505C11 7.84505 7.76 9.91005 6.31 10.405Z"
-              stroke="#0B0F0E"
-              strokeWidth={1.5}
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
+          <HeartIcon className="h-3 w-3 lg:h-5 lg:w-5" />
         </button>
         <Image
-          src={properityImage1}
+          src={props.image}
           width={600}
           height={650}
           alt="Property"
-          className="h-full w-full rounded-lg object-cover"
+          className="h-[130px] w-full rounded-lg object-cover lg:h-[400px]"
         />
       </div>
       <div className="space-y-2">
         <h4 className="line-clamp-1 text-xs font-semibold lg:text-[22px] lg:leading-8">
-          $300,000,000 / year / leasehold
+          {props.title}
         </h4>
         <div className="space-y-1">
-          <p className="text-[10px] font-semibold lg:text-lg">
-            Villa Cozy Cottage
-          </p>
+          <p className="text-[10px] font-semibold lg:text-lg">{props.type}</p>
           <p className="text-[8px] text-[#333333] lg:text-sm">
-            Bali, Indonesia
+            {props.location}
           </p>
         </div>
         <ul className="flex flex-wrap gap-x-1.5 gap-y-2 text-[10px] text-[#A9A9A9] lg:gap-[14px] lg:text-sm">

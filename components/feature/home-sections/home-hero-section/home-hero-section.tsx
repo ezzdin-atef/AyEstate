@@ -1,4 +1,5 @@
 import heroImage from "@/assets/images/hero-section-image-discover-your-dream-home.png";
+import Button from "@/components/ui/button";
 import Image from "next/image";
 
 export const HomeHeroSection = () => {
@@ -6,21 +7,17 @@ export const HomeHeroSection = () => {
     <section className="home-hero bg-[#F6F3F3] py-[50px] text-center lg:pt-[0] lg:text-left">
       <div className="container mx-auto grid-cols-2 items-center px-5 lg:grid lg:px-0">
         <div>
-          <h2 className="mb-5 text-4xl font-bold leading-tight lg:mb-8 lg:text-6xl lg:leading-[70px]">
+          <h2 className="mb-5 text-4xl font-bold leading-tight lg:mb-10 lg:text-6xl lg:leading-[70px]">
             Discover Your Dream Home Today
           </h2>
-          <p className="mb-2 text-sm font-normal leading-6 lg:text-lg">
+          <p className="mb-2 text-sm font-normal leading-6 lg:mb-0 lg:text-lg">
             Find the perfect property that suits your lifestyle. Our real estate
             service offers unique selling propositions that set us apart from
             the competition. Find your perfect home today!
           </p>
           <div className="mt-4 flex justify-center gap-4 lg:mt-20 lg:justify-normal">
-            <button className="flex h-12 items-center justify-center rounded-xl bg-primary-1 px-6 py-3 font-semibold text-black-111">
-              Explore Now
-            </button>
-            <button className="flex h-12 items-center justify-center rounded-xl border border-black px-6 py-3 font-semibold text-black">
-              Learn More
-            </button>
+            <Button variant="primary">Explore Now</Button>
+            <Button variant="outline">Learn More</Button>
           </div>
         </div>
 

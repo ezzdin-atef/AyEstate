@@ -12,11 +12,11 @@ interface Props {
 
 export default function Breadcrumb(props: Props) {
   return (
-    <ul className={cn("flex items-center gap-3", props.className)}>
+    <ul className={cn("flex items-center gap-2", props.className)}>
       {props.items.map((item) => (
         <li
-          key={item.link}
-          className="flex items-center gap-3 text-xs lg:text-base"
+          key={item.link + item.name}
+          className="flex items-center gap-2 text-xs lg:text-base"
         >
           <Link href={item.link} className="text-[#1D9E34]">
             {item.name}
@@ -39,7 +39,7 @@ export default function Breadcrumb(props: Props) {
           </svg>
         </li>
       ))}
-      <li className="flex items-center gap-3 text-xs text-[#0B0F0E] lg:text-base">
+      <li className="flex items-center gap-2 text-xs text-[#0B0F0E] lg:text-base">
         {props.currentPage}
       </li>
     </ul>

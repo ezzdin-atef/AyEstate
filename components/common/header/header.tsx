@@ -1,25 +1,56 @@
+"use client";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 interface Props {
   className?: string;
 }
 
 export function Header(props: Props) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        setIsOpen(false);
+      }
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
-    <div className={cn("header h-[100px] w-full", props.className)}>
-      <div className="container mx-auto flex h-full items-center justify-between px-3">
+    <div
+      className={cn(
+        "header relative h-[74px] w-full lg:h-[100px]",
+        props.className,
+      )}
+    >
+      <div className="container mx-auto flex h-full items-center justify-between px-5">
         <h1 className="playball text-[28px]">AyEstate</h1>
-        <div className="hidden items-center gap-20 lg:flex">
-          <ul className="flex items-center gap-8">
+        <div
+          className={cn(
+            "hidden items-center gap-20 lg:flex",
+            isOpen &&
+              "absolute left-0 top-full z-20 flex w-full flex-col gap-8 border-b bg-white py-4",
+          )}
+        >
+          <ul className={cn("flex items-center gap-8", isOpen && "flex-col")}>
             <li>
               <Link href="/" className="text-base font-semibold text-[#7F879E]">
                 Home
               </Link>
             </li>
             <li>
-              <Link href="/" className="text-base font-semibold text-[#7F879E]">
+              <Link
+                href="/properties"
+                className="text-base font-semibold text-[#7F879E]"
+              >
                 Listings
               </Link>
             </li>
@@ -43,7 +74,10 @@ export function Header(props: Props) {
             Contact Us
           </button>
         </div>
-        <button className="flex h-6 w-6 items-center justify-center lg:hidden">
+        <button
+          className="flex h-6 w-6 items-center justify-center lg:hidden"
+          onClick={() => setIsOpen((prev) => !prev)}
+        >
           <svg
             width="24"
             height="24"

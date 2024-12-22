@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "image": "/images/listing-properties/1.jpg",
+    "title": "$300,000,000 / year / leasehold",
+    "type": "Villa Cozy Cottage",
+    "location": "Bali, Indonesia"
+  },
+  {
+    "id": 2,
+    "image": "/images/listing-properties/2.png",
+    "title": "$300,000,000 / year / leasehold",
+    "type": "Villa Cozy Cottage",
+    "location": "Bali, Indonesia"
+  },
+  {
+    "id": 3,
+    "image": "/images/listing-properties/3.jpg",
+    "title": "$300,000,000 / year / leasehold",
+    "type": "Villa Cozy Cottage",
+    "location": "Bali, Indonesia"
+  },
+  {
+    "id": 4,
+    "image": "/images/listing-properties/4.jpg",
+    "title": "$300,000,000 / year / leasehold",
+    "type": "Villa Cozy Cottage",
+    "location": "Bali, Indonesia"
+  },
+  {
+    "id": 5,
+    "image": "/images/listing-properties/1.jpg",
+    "title": "$300,000,000 / year / leasehold",
+    "type": "Villa Cozy Cottage",
+    "location": "Bali, Indonesia"
+  },
+  {
+    "id": 6,
+    "image": "/images/listing-properties/2.jpg",
+    "title": "$300,000,000 / year / leasehold",
+    "type": "Villa Cozy Cottage",
+    "location": "Bali, Indonesia"
+  }
+]

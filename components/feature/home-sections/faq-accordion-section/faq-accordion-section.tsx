@@ -1,91 +1,59 @@
+"use client";
+import Button from "@/components/ui/button";
+import faqData from "@/data/faq.json";
+import { cn } from "@/lib/utils";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 export default function FaqAccordionSection() {
+  const [faqOpen, setFaqOpen] = useState(1);
+
   return (
-    <section className="bg-white py-[50px]">
+    <section className="bg-white py-[44.11px] lg:py-[100px]">
       <div className="container mx-auto px-5">
-        <div className="mb-6 text-center">
-          <h4 className="mb-4 hidden text-[#F59A74] lg:block">F A Q</h4>
-          <h2 className="mb-4 text-2xl font-bold lg:text-[44px] lg:leading-[58px]">
+        <div className="mb-6 text-center lg:mb-[53px]">
+          <h4 className="mb-5 hidden text-[#F59A74] lg:block">F A Q</h4>
+          <h2 className="mb-6 text-2xl font-bold lg:mb-[30px] lg:text-[44px] lg:leading-[58px]">
             Frequently Asked Question
           </h2>
-          <p className="text-sm text-[#7F879E] lg:text-lg">
+          <p className="hidden text-sm text-[#7F879E] lg:text-lg">
             Did you find the question as you expected?
           </p>
         </div>
-        <div className="grid-cols-2 gap-6 lg:grid">
-          <div className="space-y-[20px]">
+        <div className="mb-6 grid grid-cols-1 gap-5 lg:mb-[50px] lg:grid-cols-2">
+          {faqData.map((el, index) => (
             <details
-              className="details rounded-2xl border-2 border-[#F9F9F9] p-5"
-              open
+              key={el.id}
+              className={cn(
+                "details rounded-[18px] border-2 border-[#F9F9F9] p-5",
+                index === faqData.length - 1 && "col-start-2",
+              )}
+              open={faqOpen === el.id}
+              // onClick={() => setFaqOpen(el.id)}
             >
-              <summary className="cursor-pointer appearance-none text-sm font-bold">
-                What Types of properties are available on your website?
+              <summary className="cursor-pointer appearance-none pr-8 text-sm font-bold lg:text-xl">
+                {el.title}
               </summary>
               <div className="mt-4">
-                <p className="text-sm leading-6 text-[#7F879E]">
-                  Et lectus viverra aenean malesuada praesent. Egestas praesent
-                  quam auctor amet ac, ac vel. Euismod proin massa feugiat
-                  gravida tellus auctor ac, vitae justo.
+                <p className="text-sm leading-6 text-[#7F879E] lg:text-lg">
+                  {el.content}
                 </p>
-                <Link href="#" className="mt-5 block font-bold text-primary-1">
+                <Link
+                  href="#"
+                  className="mt-5 block font-bold text-primary-1 lg:text-lg lg:text-[#3860E2]"
+                >
                   Read More
                 </Link>
               </div>
             </details>
-            <details className="details rounded-2xl border-2 border-[#F9F9F9] p-5">
-              <summary className="cursor-pointer appearance-none text-sm font-bold">
-                What Types of properties are available on your website?
-              </summary>
-              <div className="mt-4">
-                <p className="text-sm leading-6 text-[#7F879E]">
-                  Et lectus viverra aenean malesuada praesent. Egestas praesent
-                  quam auctor amet ac, ac vel. Euismod proin massa feugiat
-                  gravida tellus auctor ac, vitae justo.
-                </p>
-                <Link href="#" className="mt-5 block font-bold text-primary-1">
-                  Read More
-                </Link>
-              </div>
-            </details>
-          </div>
-          <div className="space-y-[20px]">
-            <details className="details rounded-2xl border-2 border-[#F9F9F9] p-5">
-              <summary className="cursor-pointer appearance-none text-sm font-bold">
-                What Types of properties are available on your website?
-              </summary>
-              <div className="mt-4">
-                <p className="text-sm leading-6 text-[#7F879E]">
-                  Et lectus viverra aenean malesuada praesent. Egestas praesent
-                  quam auctor amet ac, ac vel. Euismod proin massa feugiat
-                  gravida tellus auctor ac, vitae justo.
-                </p>
-                <Link href="#" className="mt-5 block font-bold text-primary-1">
-                  Read More
-                </Link>
-              </div>
-            </details>
-            <details className="details rounded-2xl border-2 border-[#F9F9F9] p-5">
-              <summary className="cursor-pointer appearance-none text-sm font-bold">
-                What Types of properties are available on your website?
-              </summary>
-              <div className="mt-4">
-                <p className="text-sm leading-6 text-[#7F879E]">
-                  Et lectus viverra aenean malesuada praesent. Egestas praesent
-                  quam auctor amet ac, ac vel. Euismod proin massa feugiat
-                  gravida tellus auctor ac, vitae justo.
-                </p>
-                <Link href="#" className="mt-5 block font-bold text-primary-1">
-                  Read More
-                </Link>
-              </div>
-            </details>
-          </div>
+          ))}
         </div>
-        <button className="mt-6 flex h-12 w-full items-center justify-center rounded-xl bg-primary-1 px-6 py-3 font-semibold text-black-111 lg:mx-auto lg:w-auto">
+        <Button
+          variant="primary"
+          className="mt-6 w-full lg:mx-auto lg:h-14 lg:w-auto lg:text-lg"
+        >
           Give a Quote
-        </button>
+        </Button>
       </div>
     </section>
   );
