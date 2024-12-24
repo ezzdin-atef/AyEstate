@@ -244,7 +244,7 @@ export default function Faqs() {
           Frequently asked question about my account
         </p>
         <div className="mb-6 flex flex-col gap-5 lg:mb-[50px] lg:gap-[62px]">
-          {faqData.map((el, index) => (
+          {faqData.map((el) => (
             <details
               key={el.id}
               className={cn(

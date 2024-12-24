@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "image": "/images/blog/1.png",
+    "title": "From $0 to $40 Million: How a 10-Year Old Orphan Became a Successful Investor",
+    "date": "8 February 2024",
+    "category": "Success Stories"
+  },
+  {
+    "id": 2,
+    "image": "/images/blog/2.png",
+    "title": "The Quick Guide to Virtual House Flipping",
+    "date": "2 February 2024",
+    "category": "Invest"
+  },
+  {
+    "id": 3,
+    "image": "/images/blog/3.png",
+    "title": "Expert Home price Forecasts for 2024 revised up",
+    "date": "20 January 2024",
+    "category": "Tips"
+  },
+  {
+    "id": 4,
+    "image": "/images/blog/4.png",
+    "title": "How to Choose the Right Real Estate Agent for Your Needs",
+    "date": "15 January 2024",
+    "category": "Tips"
+  }
+]

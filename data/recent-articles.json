@@ -1,0 +1,65 @@
+[
+  {
+    "id": 7,
+    "image": "/images/blog/7.png",
+    "title": "15 Reasons Why Real Estate is the Best Investment",
+    "date": "4 February 2024",
+    "category": "Tips"
+  },
+  {
+    "id": 8,
+    "image": "/images/blog/8.png",
+    "title": "Renters Are Still Moving—These Markets Are Where You Should Be Investing",
+    "date": "24 January 2024",
+    "category": "Success Stories"
+  },
+  {
+    "id": 9,
+    "image": "/images/blog/9.png",
+    "title": "Every Major U.S. City Where It’s More Expensive to Rent Than Buy",
+    "date": "21 January 2024",
+    "category": "Invest"
+  },
+  {
+    "id": 10,
+    "image": "/images/blog/10.png",
+    "title": "Redfin Report Shows Investors to Low-Cost Properties",
+    "date": "15 January 2024",
+    "category": "Success Stories"
+  },
+  {
+    "id": 11,
+    "image": "/images/blog/11.png",
+    "title": "Low-Cost Properties Are Actually the Most Expensive",
+    "date": "6 January 2024",
+    "category": "Invest Strategies"
+  },
+  {
+    "id": 12,
+    "image": "/images/blog/12.png",
+    "title": "Unlocking the Secrets of Successful Home Staging",
+    "date": "31 Desember 2023",
+    "category": "Invest Strategies"
+  },
+  {
+    "id": 13,
+    "image": "/images/blog/13.png",
+    "title": "Strategic Tips for buying your first house",
+    "date": "24 Desember 2023",
+    "category": "Tips"
+  },
+  {
+    "id": 14,
+    "image": "/images/blog/14.png",
+    "title": "Its time to prepare your house for a sprint listing",
+    "date": "17 Desember 2023",
+    "category": "Success Stories"
+  },
+  {
+    "id": 15,
+    "image": "/images/blog/15.png",
+    "title": "Smart Homes: Innovations in Real Estate Technology",
+    "date": "10 Desember 2023",
+    "category": "Tips"
+  }
+]
