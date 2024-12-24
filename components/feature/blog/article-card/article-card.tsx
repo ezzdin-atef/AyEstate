@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 interface Props {
@@ -7,6 +8,7 @@ interface Props {
   image: string;
   date: string;
   category: string;
+  slug: string;
   className?: string;
 }
 
@@ -25,8 +27,8 @@ export default function ArticleCard(props: Props) {
         <span className="h-[3px] w-[3px] rounded-full bg-[#7F879E]"></span>
         <p className="">{props.category}</p>
       </div>
-      <h3 className="text-sm font-bold capitalize text-[#1B2124] lg:text-2xl">
-        {props.title}
+      <h3 className="text-sm font-bold capitalize text-[#1B2124] hover:underline lg:text-2xl">
+        <Link href={`/blog/${props.slug}`}>{props.title}</Link>
       </h3>
     </div>
   );

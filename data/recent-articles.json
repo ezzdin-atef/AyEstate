@@ -1,6 +1,7 @@
 [
   {
     "id": 7,
+    "slug": "15-reasons-why-real-estate-is-the-best-investment",
     "image": "/images/blog/7.png",
     "title": "15 Reasons Why Real Estate is the Best Investment",
     "date": "4 February 2024",
@@ -8,6 +9,7 @@
   },
   {
     "id": 8,
+    "slug": "renters-are-still-moving-these-markets-are-where-you-should-be-investing",
     "image": "/images/blog/8.png",
     "title": "Renters Are Still Moving—These Markets Are Where You Should Be Investing",
     "date": "24 January 2024",
@@ -15,6 +17,7 @@
   },
   {
     "id": 9,
+    "slug": "every-major-u-s-city-where-its-more-expensive-to-rent-than-buy",
     "image": "/images/blog/9.png",
     "title": "Every Major U.S. City Where It’s More Expensive to Rent Than Buy",
     "date": "21 January 2024",
@@ -22,6 +25,7 @@
   },
   {
     "id": 10,
+    "slug": "redfin-report-shows-investors-to-low-cost-properties",
     "image": "/images/blog/10.png",
     "title": "Redfin Report Shows Investors to Low-Cost Properties",
     "date": "15 January 2024",
@@ -29,6 +33,7 @@
   },
   {
     "id": 11,
+    "slug": "low-cost-properties-are-actually-the-most-expensive",
     "image": "/images/blog/11.png",
     "title": "Low-Cost Properties Are Actually the Most Expensive",
     "date": "6 January 2024",
@@ -36,6 +41,7 @@
   },
   {
     "id": 12,
+    "slug": "unlockin-the-secrets-of-successful-home-staging",
     "image": "/images/blog/12.png",
     "title": "Unlocking the Secrets of Successful Home Staging",
     "date": "31 Desember 2023",
@@ -43,6 +49,7 @@
   },
   {
     "id": 13,
+    "slug": "strategic-tips-for-buying-your-first-house",
     "image": "/images/blog/13.png",
     "title": "Strategic Tips for buying your first house",
     "date": "24 Desember 2023",
@@ -50,6 +57,7 @@
   },
   {
     "id": 14,
+    "slug": "its-time-to-prepare-your-house-for-a-sprint-listing",
     "image": "/images/blog/14.png",
     "title": "Its time to prepare your house for a sprint listing",
     "date": "17 Desember 2023",
@@ -57,6 +65,7 @@
   },
   {
     "id": 15,
+    "slug": "smart-homes-innovations-in-real-estate-technology",
     "image": "/images/blog/15.png",
     "title": "Smart Homes: Innovations in Real Estate Technology",
     "date": "10 Desember 2023",

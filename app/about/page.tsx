@@ -22,7 +22,7 @@ export default function AboutUs() {
           width={1000}
           height={850}
           alt="about cover image"
-          className="h-full w-full"
+          className="h-full w-full object-cover"
         />
       </div>
 

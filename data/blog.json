@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "slug": "from-0-to-40-million-how-a-10-year-old-orphan-became-a-successful-investor",
     "image": "/images/blog/1.png",
     "title": "From $0 to $40 Million: How a 10-Year Old Orphan Became a Successful Investor",
     "date": "8 February 2024",
@@ -8,6 +9,7 @@
   },
   {
     "id": 2,
+    "slug": "the-quick-guide-to-virtual-house-flipping",
     "image": "/images/blog/2.png",
     "title": "The Quick Guide to Virtual House Flipping",
     "date": "2 February 2024",
@@ -15,6 +17,7 @@
   },
   {
     "id": 3,
+    "slug": "expert-home-price-forecasts-for-2024-revised-up",
     "image": "/images/blog/3.png",
     "title": "Expert Home price Forecasts for 2024 revised up",
     "date": "20 January 2024",
@@ -22,6 +25,7 @@
   },
   {
     "id": 4,
+    "slug": "how-to-choose-the-right-real-estate-agent-for-your-needs",
     "image": "/images/blog/4.png",
     "title": "How to Choose the Right Real Estate Agent for Your Needs",
     "date": "15 January 2024",

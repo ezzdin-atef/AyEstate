@@ -1,6 +1,7 @@
 [
   {
     "id": 5,
+    "slug": "luxury-living-exploring-high-end-real-estate-markets",
     "image": "/images/blog/5.png",
     "title": "Luxury Living: Exploring High-End Real Estate Markets",
     "date": "23 Des 2023",
@@ -9,6 +10,7 @@
   },
   {
     "id": 6,
+    "slug": "short-vs-long-term-real-estate-investing",
     "image": "/images/blog/6.png",
     "title": "Short vs. Long-Term Real Estate Investing",
     "date": "9 Nov 2023",

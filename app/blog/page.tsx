@@ -84,8 +84,8 @@ export default function Blog() {
                   <span className="h-[3px] w-[3px] rounded-full bg-[#7F879E]"></span>
                   <p className="">{article.category}</p>
                 </div>
-                <h3 className="text-sm font-bold capitalize text-[#1B2124] lg:text-xl">
-                  {article.title}
+                <h3 className="text-sm font-bold capitalize text-[#1B2124] hover:underline lg:text-xl">
+                  <Link href={`/blog/${article.slug}`}>{article.title}</Link>
                 </h3>
               </div>
             </div>
@@ -104,9 +104,12 @@ export default function Blog() {
             </p>
           </div>
           <div className="flex-shrink-0">
-            <button className="flex h-[30px] items-center justify-center rounded-xl border border-primary-1 px-3 py-[6px] text-sm font-semibold text-[#111111] lg:h-[47px] lg:border-[#111111] lg:px-4 lg:py-3 lg:text-base">
+            <Link
+              href={"/blog"}
+              className="flex h-[30px] items-center justify-center rounded-xl border border-primary-1 px-3 py-[6px] text-sm font-semibold text-[#111111] lg:h-[47px] lg:border-[#111111] lg:px-4 lg:py-3 lg:text-base"
+            >
               View All
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -136,9 +139,12 @@ export default function Blog() {
             </p>
           </div>
           <div className="flex-shrink-0">
-            <button className="flex h-[30px] items-center justify-center rounded-xl border border-primary-1 px-3 py-[6px] text-sm font-semibold text-[#111111] lg:h-[47px] lg:border-[#111111] lg:px-4 lg:py-3 lg:text-base">
+            <Link
+              href="/blog/recent"
+              className="flex h-[30px] items-center justify-center rounded-xl border border-primary-1 px-3 py-[6px] text-sm font-semibold text-[#111111] lg:h-[47px] lg:border-[#111111] lg:px-4 lg:py-3 lg:text-base"
+            >
               View All
-            </button>
+            </Link>
           </div>
         </div>
 

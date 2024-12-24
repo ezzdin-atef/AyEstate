@@ -55,24 +55,36 @@ export function Header(props: Props) {
               </Link>
             </li>
             <li>
-              <Link href="/" className="text-base font-semibold text-[#7F879E]">
+              <Link
+                href="/faqs"
+                className="text-base font-semibold text-[#7F879E]"
+              >
                 Company
               </Link>
             </li>
             <li>
-              <Link href="/" className="text-base font-semibold text-[#7F879E]">
+              <Link
+                href="/blog"
+                className="text-base font-semibold text-[#7F879E]"
+              >
                 Blog
               </Link>
             </li>
             <li>
-              <Link href="/" className="text-base font-semibold text-[#7F879E]">
+              <Link
+                href="/about"
+                className="text-base font-semibold text-[#7F879E]"
+              >
                 About Us
               </Link>
             </li>
           </ul>
-          <button className="flex h-12 items-center justify-center rounded-xl bg-primary-1 px-6 py-3 font-semibold text-black-111">
+          <Link
+            href="/contact"
+            className="flex h-12 items-center justify-center rounded-xl bg-primary-1 px-6 py-3 font-semibold text-black-111"
+          >
             Contact Us
-          </button>
+          </Link>
         </div>
         <button
           className="flex h-6 w-6 items-center justify-center lg:hidden"
