@@ -322,7 +322,7 @@ export default function Contact() {
                 name="agree-terms"
                 className="flex-shrink-0"
               />
-              <p>I agree to Loom's Terms of Service and Privacy Policy.</p>
+              <p>I agree to Loom&apos;s Terms of Service and Privacy Policy.</p>
             </Label>
 
             <div>

@@ -6,7 +6,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 
 export default function FaqAccordionSection() {
-  const [faqOpen, setFaqOpen] = useState(1);
+  const [faqOpen] = useState(1);
 
   return (
     <section className="bg-white py-[44.11px] lg:py-[100px]">
