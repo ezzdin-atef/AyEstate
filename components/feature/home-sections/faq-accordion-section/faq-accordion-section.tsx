@@ -20,12 +20,12 @@ export default function FaqAccordionSection() {
             Did you find the question as you expected?
           </p>
         </div>
-        <div className="mb-6 grid grid-cols-1 gap-5 lg:mb-[50px] lg:grid-cols-2">
+        <div className="mb-6 columns-1 gap-5 space-y-5 lg:mb-[50px] lg:columns-2">
           {faqData.map((el, index) => (
             <details
               key={el.id}
               className={cn(
-                "details rounded-[18px] border-2 border-[#F9F9F9] p-5",
+                "details break-inside-avoid rounded-[18px] border-2 border-[#F9F9F9] p-5",
                 index === faqData.length - 1 && "col-start-2",
               )}
               open={faqOpen === el.id}
@@ -50,6 +50,7 @@ export default function FaqAccordionSection() {
           ))}
         </div>
         <Button
+          aria-label="Give a Quote"
           variant="primary"
           className="mt-6 w-full lg:mx-auto lg:h-14 lg:w-auto lg:text-lg"
         >

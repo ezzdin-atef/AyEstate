@@ -28,7 +28,7 @@ export const FindPropertiesSection = () => {
                   alt={property.title}
                   width={320}
                   height={200}
-                  className="h-[189px] w-full object-cover lg:h-[365px]"
+                  className="h-[189px] w-full object-cover lg:h-[365px] lg:rounded-xl"
                 />
               </div>
               <h3 className="text-base font-semibold text-black lg:text-lg">
@@ -51,6 +51,7 @@ export const FindPropertiesSection = () => {
 
         <div className="text-center">
           <Button
+            aria-label="View All Properties"
             variant="primary"
             as={CustomLink}
             title="View All Properties"

@@ -98,6 +98,7 @@ export function Header(props: Props) {
         <button
           className="flex h-6 w-6 items-center justify-center lg:hidden"
           onClick={() => setIsOpen((prev) => !prev)}
+          aria-label="Toggle FAQ"
         >
           <svg
             width="24"

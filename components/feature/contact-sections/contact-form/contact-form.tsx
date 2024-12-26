@@ -99,7 +99,11 @@ export default function ContactForm() {
           </Label>
 
           <div>
-            <Button variant="primary" className="lg:ml-auto">
+            <Button
+              aria-label="Contact Sales"
+              variant="primary"
+              className="lg:ml-auto"
+            >
               Contact Sales
             </Button>
           </div>

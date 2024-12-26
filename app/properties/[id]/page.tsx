@@ -141,8 +141,10 @@ export default function PropertiesDetails() {
             exceptional.
           </p>
           <div className="flex gap-6">
-            <Button variant="primary">Learn More</Button>
-            <Button variant="link">
+            <Button variant="primary" aria-label="Learn more about us">
+              Learn More
+            </Button>
+            <Button variant="link" aria-label="Contact US">
               Contact <ArrowRight />
             </Button>
           </div>

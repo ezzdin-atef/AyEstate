@@ -49,7 +49,11 @@ function BestFilters() {
     <div className="border-b border-[#E4E9EE] py-6">
       <div className="mb-3 flex items-center justify-between">
         <h3 className="text-base font-bold">Best Filter</h3>
-        <Button variant="link" onClick={() => setIshidden((prev) => !prev)}>
+        <Button
+          aria-label="Collapse Filters"
+          variant="link"
+          onClick={() => setIshidden((prev) => !prev)}
+        >
           <ArrowUpIcon />
         </Button>
       </div>
@@ -83,7 +87,11 @@ function LocationsFilters() {
     <div className="border-b border-[#E4E9EE] py-6">
       <div className="mb-3 flex items-center justify-between">
         <h3 className="text-base font-bold">Location</h3>
-        <Button variant="link" onClick={() => setIshidden((prev) => !prev)}>
+        <Button
+          aria-label="Collapse Filters"
+          variant="link"
+          onClick={() => setIshidden((prev) => !prev)}
+        >
           <ArrowUpIcon />
         </Button>
       </div>
@@ -104,7 +112,10 @@ function LocationsFilters() {
           <Input type="checkbox" name="option" />
           <p className="flex items-center gap-1">Medan</p>
         </Label>
-        <button className="flex text-base font-medium text-[#1D9E34]">
+        <button
+          aria-label="Show all options"
+          className="flex text-base font-medium text-[#1D9E34]"
+        >
           Show All
         </button>
       </div>
@@ -118,7 +129,11 @@ function CategoriesFilters() {
     <div className="border-b border-[#E4E9EE] py-6">
       <div className="mb-3 flex items-center justify-between">
         <h3 className="text-base font-bold">Category</h3>
-        <Button variant="link" onClick={() => setIshidden((prev) => !prev)}>
+        <Button
+          aria-label="Collapse Filters"
+          variant="link"
+          onClick={() => setIshidden((prev) => !prev)}
+        >
           <ArrowUpIcon />
         </Button>
       </div>
@@ -139,7 +154,10 @@ function CategoriesFilters() {
           <Input type="checkbox" name="option" />
           <p className="flex items-center gap-1">Hotel</p>
         </Label>
-        <button className="flex text-base font-medium text-[#1D9E34]">
+        <button
+          aria-label="Show all options"
+          className="flex text-base font-medium text-[#1D9E34]"
+        >
           Show All Categories
         </button>
       </div>
@@ -153,7 +171,11 @@ function PriceRangeFilter() {
     <div className="py-6">
       <div className="mb-3 flex items-center justify-between">
         <h3 className="text-base font-bold">Price Range</h3>
-        <Button variant="link" onClick={() => setIshidden((prev) => !prev)}>
+        <Button
+          aria-label="Collapse Filters"
+          variant="link"
+          onClick={() => setIshidden((prev) => !prev)}
+        >
           <ArrowUpIcon />
         </Button>
       </div>

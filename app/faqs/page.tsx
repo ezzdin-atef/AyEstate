@@ -39,6 +39,7 @@ export default function Faqs() {
         <Button
           variant="primary"
           className="absolute right-[6px] top-1/2 hidden h-[56px] -translate-y-1/2 px-[53px] text-base lg:flex"
+          aria-label="Search"
         >
           Search
         </Button>
@@ -286,6 +287,7 @@ export default function Faqs() {
         <Button
           variant="primary"
           className="h-[48px] w-full text-xs font-bold lg:mx-auto lg:h-14 lg:w-auto lg:text-base"
+          aria-label="Give a Quote"
         >
           Give a Quote
         </Button>

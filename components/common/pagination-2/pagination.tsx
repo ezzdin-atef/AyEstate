@@ -13,7 +13,10 @@ export default function PaginationStyle2(props: Props) {
         props.className,
       )}
     >
-      <button className="hidden h-11 w-11 items-center justify-center">
+      <button
+        aria-label="Previous Page"
+        className="hidden h-11 w-11 items-center justify-center"
+      >
         <svg
           width={16}
           height={16}
@@ -33,24 +36,42 @@ export default function PaginationStyle2(props: Props) {
       </button>
 
       <div className="flex items-center gap-3">
-        <button className="flex h-11 w-11 items-center justify-center rounded-lg border border-[#E4E9EE] text-[#1D9E34]">
+        <button
+          aria-label="page"
+          className="flex h-11 w-11 items-center justify-center rounded-lg border border-[#E4E9EE] text-[#1D9E34]"
+        >
           1
         </button>
-        <button className="flex h-11 w-11 items-center justify-center rounded-lg border border-[#E4E9EE] text-[#818B9C]">
+        <button
+          aria-label="page"
+          className="flex h-11 w-11 items-center justify-center rounded-lg border border-[#E4E9EE] text-[#818B9C]"
+        >
           2
         </button>
-        <button className="flex h-11 w-11 items-center justify-center rounded-lg border border-[#E4E9EE] text-[#818B9C]">
+        <button
+          aria-label="page"
+          className="flex h-11 w-11 items-center justify-center rounded-lg border border-[#E4E9EE] text-[#818B9C]"
+        >
           3
         </button>
-        <button className="flex h-11 w-11 items-center justify-center rounded-lg border border-[#E4E9EE] text-[#818B9C]">
+        <div
+          aria-label="page"
+          className="flex h-11 w-11 items-center justify-center rounded-lg border border-[#E4E9EE] text-[#818B9C]"
+        >
           ...
-        </button>
-        <button className="flex h-11 w-11 items-center justify-center rounded-lg border border-[#E4E9EE] text-[#818B9C]">
+        </div>
+        <button
+          aria-label="page"
+          className="flex h-11 w-11 items-center justify-center rounded-lg border border-[#E4E9EE] text-[#818B9C]"
+        >
           274
         </button>
       </div>
 
-      <button className="flex h-11 w-11 items-center justify-center">
+      <button
+        aria-label="Next Page"
+        className="flex h-11 w-11 items-center justify-center"
+      >
         <svg
           width={16}
           height={16}

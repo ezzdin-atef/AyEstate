@@ -19,6 +19,7 @@ export default function CtaSection() {
           Find out why Astheris are Australia&apos;s trusted Digital Agency.
         </p>
         <Button
+          aria-label="Start a project"
           variant="primary"
           className="w-full gap-[10px] rounded-full py-[14px] text-sm lg:mx-auto lg:h-14 lg:w-auto lg:text-lg"
         >

@@ -1,8 +1,8 @@
 import { cn } from "@/lib/utils";
 import Link, { LinkProps } from "next/link";
-import React from "react";
+import React, { HTMLAttributes } from "react";
 
-interface BaseProps {
+interface BaseProps extends HTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
   size?: "icon";
   variant?: "primary" | "outline" | "tertiary" | "link";

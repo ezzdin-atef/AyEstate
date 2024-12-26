@@ -36,6 +36,7 @@ export default function AboutUs() {
           height={850}
           alt="about cover image"
           className="h-full w-full object-cover"
+          priority={true}
         />
       </div>
 
@@ -282,6 +283,7 @@ export default function AboutUs() {
             <Button
               variant="primary"
               className="w-full gap-[10px] rounded-full border border-[#F4F2FF] bg-transparent py-[14px] text-sm text-[#F4F2FF] lg:mx-auto lg:h-14 lg:w-auto lg:text-lg"
+              aria-label="Start A Project"
             >
               Start A Project
               <svg

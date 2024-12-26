@@ -36,8 +36,10 @@ export const DiscoverSection = () => {
           />
         </div>
         <div className="mt-4 flex gap-6">
-          <Button variant="primary">Learn More</Button>
-          <Button variant="link">
+          <Button aria-label="Learn More about us" variant="primary">
+            Learn More
+          </Button>
+          <Button aria-label="Contact US" variant="link">
             Contact <ArrowRight />
           </Button>
         </div>

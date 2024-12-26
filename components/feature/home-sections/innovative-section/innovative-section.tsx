@@ -20,7 +20,9 @@ export const InnovativeSection = () => {
             </p>
             <div className="text-center lg:text-left">
               <Button
+                aria-label="Learn More"
                 as={Link}
+                title="Learn More"
                 variant="primary"
                 href="/learn-more"
                 className="inline-flex"

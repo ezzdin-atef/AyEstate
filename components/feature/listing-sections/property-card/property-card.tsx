@@ -16,7 +16,10 @@ export default function PropertyCard(props: Props) {
         <span className="absolute left-2 top-3 rounded-3xl bg-[#111111BF] px-1 py-0.5 text-[8px] font-semibold text-white lg:left-6 lg:top-4 lg:px-5 lg:py-2 lg:text-sm">
           Featured
         </span>
-        <button className="absolute right-2 top-2 rounded-full bg-[#FFFFFFBF] p-1 lg:right-6 lg:top-4 lg:p-2">
+        <button
+          aria-label="Add to favorite"
+          className="absolute right-2 top-2 rounded-full bg-[#FFFFFFBF] p-1 lg:right-6 lg:top-4 lg:p-2"
+        >
           <HeartIcon className="h-3 w-3 lg:h-5 lg:w-5" />
         </button>
         <Image

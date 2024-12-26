@@ -59,6 +59,7 @@ export default function ListingProperties() {
               />
             </Label>
             <Button
+              aria-label="Filters"
               size="icon"
               className="lg:hidden"
               onClick={() => setIsSidebarOpened(true)}
@@ -66,10 +67,14 @@ export default function ListingProperties() {
               <FilterIcon />
             </Button>
             <div className="mx-1 block h-5 w-1 border-l border-[#E4E9EE] lg:ml-[10px] lg:mr-4 lg:h-6" />
-            <Button size="icon" className="border-[#1E4C2F] bg-[#1E4C2F]">
+            <Button
+              aria-label="Grid layout"
+              size="icon"
+              className="border-[#1E4C2F] bg-[#1E4C2F]"
+            >
               <GridIcon />
             </Button>
-            <Button size="icon">
+            <Button aria-label="List layout" size="icon">
               <ListIcon />
             </Button>
           </div>

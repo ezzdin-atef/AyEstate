@@ -15,8 +15,12 @@ export const HomeHeroSection = () => {
             the competition. Find your perfect home today!
           </p>
           <div className="mt-4 flex justify-center gap-4 lg:mt-20 lg:justify-normal">
-            <Button variant="primary">Explore Now</Button>
-            <Button variant="outline">Learn More</Button>
+            <Button aria-label="Explore More about us" variant="primary">
+              Explore Now
+            </Button>
+            <Button aria-label="Learn More about us" variant="outline">
+              Learn More
+            </Button>
           </div>
         </div>
 

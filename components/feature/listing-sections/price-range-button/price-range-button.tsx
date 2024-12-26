@@ -10,6 +10,7 @@ interface Props {
 export default function PriceRangeButton(props: Props) {
   return (
     <button
+      aria-label="Price range"
       className={cn(
         "rounded-xl border border-[#E4E9EE] px-4 py-[11px]",
         props.className,

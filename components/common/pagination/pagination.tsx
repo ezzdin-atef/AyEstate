@@ -13,7 +13,10 @@ export default function Pagination(props: Props) {
         props.className,
       )}
     >
-      <button className="flex h-11 w-11 items-center justify-center rounded-lg">
+      <button
+        className="flex h-11 w-11 items-center justify-center rounded-lg"
+        aria-label="Previous Page"
+      >
         <svg
           width={16}
           height={16}
@@ -33,21 +36,36 @@ export default function Pagination(props: Props) {
       </button>
 
       <div className="flex items-center gap-3">
-        <button className="flex h-11 w-11 items-center justify-center rounded-lg bg-primary-1 text-[#111111]">
+        <button
+          aria-label="page"
+          className="flex h-11 w-11 items-center justify-center rounded-lg bg-primary-1 text-[#111111]"
+        >
           1
         </button>
-        <button className="flex h-11 w-11 items-center justify-center rounded-lg bg-[#F9F9F9] text-[#7F879E]">
+        <button
+          aria-label="page"
+          className="flex h-11 w-11 items-center justify-center rounded-lg bg-[#F9F9F9] text-[#7F879E]"
+        >
           2
         </button>
-        <button className="flex h-11 w-11 items-center justify-center rounded-lg bg-[#F9F9F9] text-[#7F879E]">
+        <button
+          aria-label="page"
+          className="flex h-11 w-11 items-center justify-center rounded-lg bg-[#F9F9F9] text-[#7F879E]"
+        >
           3
         </button>
-        <button className="flex h-11 w-11 items-center justify-center rounded-lg bg-[#F9F9F9] text-[#7F879E]">
+        <button
+          aria-label="page"
+          className="flex h-11 w-11 items-center justify-center rounded-lg bg-[#F9F9F9] text-[#7F879E]"
+        >
           ...
         </button>
       </div>
 
-      <button className="flex h-11 w-11 items-center justify-center rounded-lg">
+      <button
+        aria-label="Next Page"
+        className="flex h-11 w-11 items-center justify-center rounded-lg"
+      >
         <svg
           width={16}
           height={16}

@@ -43,6 +43,7 @@ export default function Blog() {
         <Button
           variant="primary"
           className="absolute right-[6px] top-1/2 hidden h-[56px] -translate-y-1/2 px-[53px] text-base lg:flex"
+          aria-label="Search"
         >
           Search
         </Button>

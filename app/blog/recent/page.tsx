@@ -29,7 +29,10 @@ export default function RecentBlog() {
           </p>
         </div>
         <div className="flex-shrink-0 lg:hidden">
-          <button className="flex h-[30px] items-center justify-center rounded-xl border border-primary-1 px-3 py-[6px] text-sm font-semibold text-[#111111] lg:h-[47px] lg:border-[#111111] lg:px-4 lg:py-3 lg:text-base">
+          <button
+            aria-label="View All Recent Articles"
+            className="flex h-[30px] items-center justify-center rounded-xl border border-primary-1 px-3 py-[6px] text-sm font-semibold text-[#111111] lg:h-[47px] lg:border-[#111111] lg:px-4 lg:py-3 lg:text-base"
+          >
             View All
           </button>
         </div>
