@@ -9,9 +9,9 @@ import TestimonialsSection from "@/components/feature/home-sections/testimonials
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Discover Your Dream Home Today - AyEstate",
+  title: "Discover Your Dream and Ideal Home Today - AyEstate",
   description:
-    "Find the perfect property that suits your lifestyle. Our real estate service offers unique selling propositions that set us apart from the competition. Find your perfect home today!",
+    "Find the perfect property that suits your lifestyle. Our real estate service offers unique selling propositions that set us apart from the competition.",
   openGraph: {
     images: "/images/hero-section-image.png",
   },

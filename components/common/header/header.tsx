@@ -32,7 +32,7 @@ export function Header(props: Props) {
       )}
     >
       <div className="container mx-auto flex h-full items-center justify-between px-5">
-        <h1 className="playball text-[28px]">AyEstate</h1>
+        <div className="playball text-[28px]">AyEstate</div>
         <div
           className={cn(
             "hidden items-center gap-20 lg:flex",

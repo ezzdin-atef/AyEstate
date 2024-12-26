@@ -5,12 +5,12 @@ export const SimplifySection = () => {
     <section className="bg-white py-[50px] lg:py-[80px]">
       <div className="container mx-auto px-5">
         <div className="mx-auto mb-12 lg:max-w-3xl">
-          <p className="mb-3 text-center text-base font-semibold text-black lg:mb-4">
+          <h4 className="mb-3 text-center text-base font-semibold text-black lg:mb-4">
             Simplify
-          </p>
-          <h1 className="mb-5 text-center text-[32px] font-bold leading-10 text-black lg:mb-6 lg:text-[48px] lg:leading-[58px]">
+          </h4>
+          <h2 className="mb-5 text-center text-[32px] font-bold leading-10 text-black lg:mb-6 lg:text-[48px] lg:leading-[58px]">
             Streamline Your Property Buying or Selling Process
-          </h1>
+          </h2>
           <p className="text-center text-base leading-6 text-black lg:text-lg">
             Our website provides a step-by-step guide to help you seamlessly
             navigate the process of buying or selling property. From finding the

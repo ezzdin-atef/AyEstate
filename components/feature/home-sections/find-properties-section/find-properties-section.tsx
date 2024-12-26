@@ -8,12 +8,12 @@ export const FindPropertiesSection = () => {
     <section className="bg-white py-[50px] lg:py-[80px]">
       <div className="container mx-auto px-5">
         <div className="mb-12 text-center">
-          <p className="mb-3 text-base font-semibold text-black lg:mb-4">
+          <h4 className="mb-3 text-base font-semibold text-black lg:mb-4">
             Find
-          </p>
-          <h1 className="mb-5 text-[32px] font-bold text-black lg:mb-6 lg:text-5xl">
+          </h4>
+          <h2 className="mb-5 text-[32px] font-bold text-black lg:mb-6 lg:text-5xl">
             Properties
-          </h1>
+          </h2>
           <p className="text-base leading-6 text-black lg:text-lg">
             Explore our curated list of properties and find your dream home.
           </p>

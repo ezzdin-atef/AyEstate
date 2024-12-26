@@ -6,9 +6,9 @@ export const HomeHeroSection = () => {
     <section className="home-hero bg-[#F6F3F3] py-[50px] text-center lg:pt-[0] lg:text-left">
       <div className="container mx-auto grid-cols-2 items-center px-5 lg:grid lg:px-0">
         <div>
-          <h2 className="mb-5 text-4xl font-bold leading-tight lg:mb-10 lg:text-6xl lg:leading-[70px]">
+          <h1 className="mb-5 text-4xl font-bold leading-tight lg:mb-10 lg:text-6xl lg:leading-[70px]">
             Discover Your Dream Home Today
-          </h2>
+          </h1>
           <p className="mb-2 text-sm font-normal leading-6 lg:mb-0 lg:text-lg">
             Find the perfect property that suits your lifestyle. Our real estate
             service offers unique selling propositions that set us apart from
