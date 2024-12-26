@@ -1,6 +1,6 @@
+import CustomLink from "@/components/common/custom-link/custom-link";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
 interface Props {
@@ -28,7 +28,12 @@ export default function ArticleCard(props: Props) {
         <p className="">{props.category}</p>
       </div>
       <h3 className="text-sm font-bold capitalize text-[#1B2124] hover:underline lg:text-2xl">
-        <Link href={`/blog/${props.slug}`}>{props.title}</Link>
+        <CustomLink
+          title={`Read more about ${props.title}`}
+          href={`/blog/${props.slug}`}
+        >
+          {props.title}
+        </CustomLink>
       </h3>
     </div>
   );

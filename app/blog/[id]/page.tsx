@@ -1,9 +1,9 @@
+import CustomLink from "@/components/common/custom-link/custom-link";
 import ArticleCard from "@/components/feature/blog/article-card/article-card";
 import Heading from "@/components/feature/blog/heading/heading";
 import Text from "@/components/feature/blog/text/text";
 import recentArticles from "@/data/recent-articles.json";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
 export default function BlogPostDetails() {
@@ -118,9 +118,9 @@ export default function BlogPostDetails() {
         lesson in sourcing, acquiring, and operating the acquired assets. This
         quickly led to rapid growth over a two-year period, where they would
         purchase RV parks and more{" "}
-        <Link className="underline" href="#">
+        <CustomLink title="multifamily" className="underline" href="#">
           multifamily
-        </Link>{" "}
+        </CustomLink>{" "}
         properties, such as a 40-unit townhouse community on Cape Cod
       </Text>
 
@@ -133,12 +133,13 @@ export default function BlogPostDetails() {
             Newest update article from AyEstate
           </p>
         </div>
-        <Link
+        <CustomLink
+          title="View All"
           href="/blog/recent"
           className="text-pretty text-sm font-semibold lg:flex lg:h-[47px] lg:w-[107px] lg:items-center lg:justify-center lg:rounded-xl lg:border lg:border-[#111111] lg:text-lg"
         >
           View All
-        </Link>
+        </CustomLink>
       </div>
 
       <div className="grid grid-cols-1 gap-5 lg:grid-cols-3 lg:gap-[30px]">

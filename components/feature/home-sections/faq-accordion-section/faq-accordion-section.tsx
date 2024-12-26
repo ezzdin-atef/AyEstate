@@ -1,8 +1,8 @@
 "use client";
+import CustomLink from "@/components/common/custom-link/custom-link";
 import Button from "@/components/ui/button";
 import faqData from "@/data/faq.json";
 import { cn } from "@/lib/utils";
-import Link from "next/link";
 import React, { useState } from "react";
 
 export default function FaqAccordionSection() {
@@ -38,12 +38,13 @@ export default function FaqAccordionSection() {
                 <p className="text-sm leading-6 text-[#7F879E] lg:text-lg">
                   {el.content}
                 </p>
-                <Link
+                <CustomLink
+                  title="Read More"
                   href="#"
                   className="mt-5 block font-bold text-primary-1 lg:text-lg lg:text-[#3860E2]"
                 >
                   Read More
-                </Link>
+                </CustomLink>
               </div>
             </details>
           ))}

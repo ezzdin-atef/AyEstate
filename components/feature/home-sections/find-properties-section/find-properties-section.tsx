@@ -1,7 +1,7 @@
+import CustomLink from "@/components/common/custom-link/custom-link";
 import Button from "@/components/ui/button";
 import propertiesData from "@/data/properties.json";
 import Image from "next/image";
-import Link from "next/link";
 
 export const FindPropertiesSection = () => {
   return (
@@ -38,12 +38,13 @@ export const FindPropertiesSection = () => {
               <p className="mb-4 text-lg font-semibold text-black">
                 {property.price}
               </p>
-              <Link
+              <CustomLink
+                title="View Details"
                 href="/property-details"
                 className="w-full rounded-xl border border-primary-1 py-2 text-center text-sm font-semibold text-black lg:border-black"
               >
                 View Details
-              </Link>
+              </CustomLink>
             </div>
           ))}
         </div>
@@ -51,7 +52,8 @@ export const FindPropertiesSection = () => {
         <div className="text-center">
           <Button
             variant="primary"
-            as={Link}
+            as={CustomLink}
+            title="View All Properties"
             href="#"
             className="inline-flex rounded-xl px-[18.5px] lg:hidden"
           >

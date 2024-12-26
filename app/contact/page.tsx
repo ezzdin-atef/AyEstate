@@ -1,10 +1,10 @@
 "use client";
+import CustomLink from "@/components/common/custom-link/custom-link";
 import Button from "@/components/ui/button";
 import Input from "@/components/ui/input";
 import Label from "@/components/ui/label";
 import Select from "@/components/ui/select";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
 export default function Contact() {
@@ -92,12 +92,13 @@ export default function Contact() {
           <p className="mb-4 text-center text-sm text-[#7F879E] lg:text-lg">
             Ask us a question by email and we will respond within a few days.
           </p>
-          <Link
+          <CustomLink
+            title="Leave a messages"
             href="#"
             className="block text-center text-sm font-bold text-primary-1 lg:text-base lg:text-[#111111]"
           >
             Leave a messages
-          </Link>
+          </CustomLink>
         </div>
         <div className="rounded-2xl border-[1.5px] border-[#F9F9F9] px-[14px] py-4 lg:p-6">
           <svg
@@ -147,12 +148,13 @@ export default function Contact() {
             You can meet us at our office and discuss the details of your
             question.
           </p>
-          <Link
+          <CustomLink
+            title="Get Directions"
             href="#"
             className="block text-center text-sm font-bold text-primary-1 lg:text-base lg:text-[#111111]"
           >
             Get Directions
-          </Link>
+          </CustomLink>
         </div>
         <div className="rounded-2xl border-[1.5px] border-[#F9F9F9] px-[14px] py-4 lg:p-6">
           <svg
@@ -225,12 +227,13 @@ export default function Contact() {
           <p className="mb-4 text-center text-sm text-[#7F879E] lg:text-lg">
             Call us if your question requires an immediate response.
           </p>
-          <Link
+          <CustomLink
+            title="Call Us"
             href="#"
             className="block text-center text-sm font-bold text-primary-1 lg:text-base lg:text-[#111111]"
           >
             +(632) 3892402
-          </Link>
+          </CustomLink>
         </div>
       </div>
 

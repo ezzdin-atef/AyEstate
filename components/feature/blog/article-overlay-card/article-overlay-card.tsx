@@ -1,6 +1,6 @@
+import CustomLink from "@/components/common/custom-link/custom-link";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
 interface Props {
@@ -15,7 +15,10 @@ interface Props {
 
 export default function ArticleOverlayCard(props: Props) {
   return (
-    <Link href={`/blog/${props.slug}`}>
+    <CustomLink
+      title={`Read more about ${props.title}`}
+      href={`/blog/${props.slug}`}
+    >
       <div
         className={cn(
           "relative h-[317px] w-full overflow-hidden rounded-2xl lg:h-[502px]",
@@ -46,6 +49,6 @@ export default function ArticleOverlayCard(props: Props) {
           )}
         </div>
       </div>
-    </Link>
+    </CustomLink>
   );
 }

@@ -13,6 +13,7 @@ interface BaseProps {
 type LinkAsProps = BaseProps &
   LinkProps & {
     as?: typeof Link;
+    title: string;
   };
 
 type Props = BaseProps | LinkAsProps;
@@ -38,7 +39,7 @@ export default function Button({
           "flex h-12 items-center justify-center gap-2 font-normal text-black",
         size === "icon" &&
           "flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-lg border border-[#E4E9EE] lg:h-11 lg:w-11",
-        className, 
+        className,
       )}
       {...props}
     >

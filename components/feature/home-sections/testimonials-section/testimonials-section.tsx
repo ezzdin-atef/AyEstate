@@ -1,4 +1,3 @@
-import ceoAvatar from "@/assets/images/ceo-avatar.png";
 import Image from "next/image";
 import React from "react";
 
@@ -35,7 +34,7 @@ export default function TestimonialsSection() {
         </p>
         <div className="lg:flex lg:items-center lg:gap-5 lg:text-left">
           <Image
-            src={ceoAvatar}
+            src={"/images/ceo-avatar.png"}
             alt="John Doe"
             className="mx-auto mb-4"
             width={56}
@@ -45,7 +44,7 @@ export default function TestimonialsSection() {
             <p className="font-semibold">John Doe</p>
             <p className="">CEO, ABC Realty</p>
           </div>
-        </div> 
+        </div>
       </div>
     </div>
   );

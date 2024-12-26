@@ -1,5 +1,5 @@
-import Link from "next/link";
 import React from "react";
+import CustomLink from "../custom-link/custom-link";
 
 export default function Footer() {
   return (
@@ -23,19 +23,23 @@ export default function Footer() {
             </h3>
             <ul className="flex flex-col gap-3 text-sm text-[#7F879E] lg:text-lg">
               <li className="">
-                <Link href="#" className="">
+                <CustomLink
+                  title="Listing page"
+                  href="/properties"
+                  className=""
+                >
                   Listings
-                </Link>
+                </CustomLink>
               </li>
               <li className="">
-                <Link href="#" className="">
+                <CustomLink title="About us page" href="/about" className="">
                   About us
-                </Link>
+                </CustomLink>
               </li>
               <li className="">
-                <Link href="#" className="">
+                <CustomLink title="Blog page" href="/blog" className="">
                   Blog
-                </Link>
+                </CustomLink>
               </li>
             </ul>
           </div>
@@ -46,19 +50,23 @@ export default function Footer() {
             </h3>
             <ul className="flex flex-col gap-3 text-sm text-[#7F879E] lg:text-lg">
               <li className="">
-                <Link href="#" className="">
+                <CustomLink
+                  title="Properties page"
+                  href="/properties"
+                  className=""
+                >
                   Properties
-                </Link>
+                </CustomLink>
               </li>
               <li className="">
-                <Link href="#" className="">
+                <CustomLink title="FAQ page" href="/faqs" className="">
                   FAQ
-                </Link>
+                </CustomLink>
               </li>
               <li className="">
-                <Link href="#" className="">
+                <CustomLink title="Contact page" href="/contact" className="">
                   Contact Us
-                </Link>
+                </CustomLink>
               </li>
             </ul>
           </div>
@@ -69,24 +77,36 @@ export default function Footer() {
             </h3>
             <ul className="flex flex-col gap-3 text-sm text-[#7F879E] lg:text-lg">
               <li className="">
-                <Link href="#" className="">
+                <CustomLink
+                  title="Terms of Services page"
+                  href="#"
+                  className=""
+                >
                   Terms of Services
-                </Link>
+                </CustomLink>
               </li>
               <li className="">
-                <Link href="#" className="">
+                <CustomLink
+                  title="Terms and Condition page"
+                  href="#"
+                  className=""
+                >
                   Terms and Condition
-                </Link>
+                </CustomLink>
               </li>
               <li className="">
-                <Link href="#" className="">
+                <CustomLink
+                  title="Complaints Process page"
+                  href="#"
+                  className=""
+                >
                   Complaints Process
-                </Link>
+                </CustomLink>
               </li>
               <li className="">
-                <Link href="#" className="">
+                <CustomLink title="Privacy Policy page" href="#" className="">
                   Privacy Policy
-                </Link>
+                </CustomLink>
               </li>
             </ul>
           </div>
@@ -97,24 +117,24 @@ export default function Footer() {
             </h3>
             <ul className="flex flex-col gap-3 text-sm text-[#7F879E] lg:text-lg">
               <li className="">
-                <Link href="#" className="">
+                <CustomLink title="Style guide page" href="#" className="">
                   Style Guide
-                </Link>
+                </CustomLink>
               </li>
               <li className="">
-                <Link href="#" className="">
+                <CustomLink title="Changelog page" href="#" className="">
                   Changelog
-                </Link>
+                </CustomLink>
               </li>
               <li className="">
-                <Link href="#" className="">
+                <CustomLink title="Licensing page" href="#" className="">
                   Licensing
-                </Link>
+                </CustomLink>
               </li>
               <li className="">
-                <Link href="#" className="">
+                <CustomLink title="Instructions page" href="#" className="">
                   Instructions
-                </Link>
+                </CustomLink>
               </li>
             </ul>
           </div>
@@ -125,14 +145,14 @@ export default function Footer() {
             </h3>
             <ul className="flex flex-col gap-3 text-sm text-[#7F879E] lg:text-lg">
               <li className="">
-                <Link href="#" className="">
+                <CustomLink title="Get desktop app" href="#" className="">
                   Desktop App
-                </Link>
+                </CustomLink>
               </li>
               <li className="">
-                <Link href="#" className="">
+                <CustomLink title="Get mobile app" href="#" className="">
                   Mobile App
-                </Link>
+                </CustomLink>
               </li>
             </ul>
           </div>

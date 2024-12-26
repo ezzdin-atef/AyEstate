@@ -1,4 +1,3 @@
-import heroImage from "@/assets/images/hero-section-image-discover-your-dream-home.png";
 import Button from "@/components/ui/button";
 import Image from "next/image";
 
@@ -23,7 +22,7 @@ export const HomeHeroSection = () => {
 
         <div className="mt-12 flex justify-center lg:justify-end">
           <Image
-            src={heroImage}
+            src={"/images/hero-section-image-discover-your-dream-home.png"}
             width={600}
             height={500}
             alt="hero image"

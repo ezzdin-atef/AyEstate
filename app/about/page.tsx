@@ -6,10 +6,10 @@ import {
   NetflixPartner,
   YoutubePartner,
 } from "@/assets/icons";
+import CustomLink from "@/components/common/custom-link/custom-link";
 import CtaSection from "@/components/feature/home-sections/cta-section/cta-section";
 import Button from "@/components/ui/button";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
 export default function AboutUs() {
@@ -318,7 +318,7 @@ export default function AboutUs() {
 function SocialMediaLinks() {
   return (
     <div className="hidden items-center justify-center gap-[14px] lg:flex">
-      <Link href="#" className="h-6 w-6">
+      <CustomLink title="Linkedin" href="#" className="h-6 w-6">
         <svg
           width={24}
           height={24}
@@ -333,8 +333,8 @@ function SocialMediaLinks() {
             fill="black"
           />
         </svg>
-      </Link>
-      <Link href="#" className="h-6 w-6">
+      </CustomLink>
+      <CustomLink title="X" href="#" className="h-6 w-6">
         <svg
           width={24}
           height={24}
@@ -347,8 +347,8 @@ function SocialMediaLinks() {
             fill="black"
           />
         </svg>
-      </Link>
-      <Link href="#" className="h-6 w-6">
+      </CustomLink>
+      <CustomLink title="Dribbble" href="#" className="h-6 w-6">
         <svg
           width={24}
           height={24}
@@ -363,7 +363,7 @@ function SocialMediaLinks() {
             fill="black"
           />
         </svg>
-      </Link>
+      </CustomLink>
     </div>
   );
 }

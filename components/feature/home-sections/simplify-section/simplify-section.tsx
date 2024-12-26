@@ -1,6 +1,3 @@
-import connectAggentImage from "@/assets/images/connect-aggent.png";
-import findPropertyImage from "@/assets/images/find-property-image.png";
-import negotiateDealsImage from "@/assets/images/negotiate-deals.png";
 import Image from "next/image";
 
 export const SimplifySection = () => {
@@ -25,7 +22,7 @@ export const SimplifySection = () => {
           <div className="flex flex-col items-center">
             <div className="mb-6 h-52 w-80 overflow-hidden rounded-lg lg:h-auto lg:w-full">
               <Image
-                src={findPropertyImage}
+                src={"/images/find-property-image.png"}
                 alt="Find Your Dream Property"
                 width={320}
                 height={200}
@@ -44,7 +41,7 @@ export const SimplifySection = () => {
           <div className="flex flex-col items-center">
             <div className="mb-6 h-52 w-80 overflow-hidden rounded-lg lg:h-auto lg:w-full">
               <Image
-                src={connectAggentImage}
+                src={"/images/connect-aggent.png"}
                 alt="Connect with Trusted Agents"
                 width={320}
                 height={200}
@@ -63,7 +60,7 @@ export const SimplifySection = () => {
           <div className="flex flex-col items-center">
             <div className="mb-6 h-52 w-80 overflow-hidden rounded-lg lg:h-auto lg:w-full lg:rounded-xl">
               <Image
-                src={negotiateDealsImage}
+                src={"/images/negotiate-deals.png"}
                 alt="Negotiate and Close the Deal"
                 width={320}
                 height={200}

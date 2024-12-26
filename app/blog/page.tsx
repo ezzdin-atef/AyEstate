@@ -1,4 +1,5 @@
 import { SearchIcon } from "@/assets/icons";
+import CustomLink from "@/components/common/custom-link/custom-link";
 import ArticleCard from "@/components/feature/blog/article-card/article-card";
 import ArticleOverlayCard from "@/components/feature/blog/article-overlay-card/article-overlay-card";
 import Button from "@/components/ui/button";
@@ -6,7 +7,6 @@ import blogArticles from "@/data/blog.json";
 import popularArticles from "@/data/popular-articles.json";
 import recentArticles from "@/data/recent-articles.json";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
 export default function Blog() {
@@ -38,24 +38,27 @@ export default function Blog() {
         <p className="text-xs text-[#7F879E] lg:pr-1 lg:text-base lg:font-semibold">
           Suggested:
         </p>
-        <Link
+        <CustomLink
+          title="Success Stories"
           href="#"
           className="text-xs text-[#3860E2] lg:text-base lg:font-semibold"
         >
           Success Stories
-        </Link>
-        <Link
+        </CustomLink>
+        <CustomLink
+          title="Tips"
           href="#"
           className="text-xs text-[#3860E2] lg:text-base lg:font-semibold"
         >
           Tips
-        </Link>
-        <Link
+        </CustomLink>
+        <CustomLink
+          title="Invest"
           href="#"
           className="text-xs text-[#3860E2] lg:text-base lg:font-semibold"
         >
           Invest
-        </Link>
+        </CustomLink>
       </div>
 
       <div className="flex flex-col pt-[50px] lg:flex-row lg:gap-[30px] lg:pt-[100px]">
@@ -85,7 +88,9 @@ export default function Blog() {
                   <p className="">{article.category}</p>
                 </div>
                 <h3 className="text-sm font-bold capitalize text-[#1B2124] hover:underline lg:text-xl">
-                  <Link href={`/blog/${article.slug}`}>{article.title}</Link>
+                  <CustomLink title="Read more" href={`/blog/${article.slug}`}>
+                    {article.title}
+                  </CustomLink>
                 </h3>
               </div>
             </div>
@@ -104,12 +109,13 @@ export default function Blog() {
             </p>
           </div>
           <div className="flex-shrink-0">
-            <Link
+            <CustomLink
+              title="View All Blog"
               href={"/blog"}
               className="flex h-[30px] items-center justify-center rounded-xl border border-primary-1 px-3 py-[6px] text-sm font-semibold text-[#111111] lg:h-[47px] lg:border-[#111111] lg:px-4 lg:py-3 lg:text-base"
             >
               View All
-            </Link>
+            </CustomLink>
           </div>
         </div>
 
@@ -139,12 +145,13 @@ export default function Blog() {
             </p>
           </div>
           <div className="flex-shrink-0">
-            <Link
+            <CustomLink
+              title="View All Blog"
               href="/blog/recent"
               className="flex h-[30px] items-center justify-center rounded-xl border border-primary-1 px-3 py-[6px] text-sm font-semibold text-[#111111] lg:h-[47px] lg:border-[#111111] lg:px-4 lg:py-3 lg:text-base"
             >
               View All
-            </Link>
+            </CustomLink>
           </div>
         </div>
 

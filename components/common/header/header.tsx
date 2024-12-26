@@ -1,7 +1,7 @@
 "use client";
 import { cn } from "@/lib/utils";
-import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import CustomLink from "../custom-link/custom-link";
 
 interface Props {
   className?: string;
@@ -42,49 +42,58 @@ export function Header(props: Props) {
         >
           <ul className={cn("flex items-center gap-8", isOpen && "flex-col")}>
             <li>
-              <Link href="/" className="text-base font-semibold text-[#7F879E]">
+              <CustomLink
+                title="Home page"
+                href="/"
+                className="text-base font-semibold text-[#7F879E]"
+              >
                 Home
-              </Link>
+              </CustomLink>
             </li>
             <li>
-              <Link
+              <CustomLink
+                title="Properties page"
                 href="/properties"
                 className="text-base font-semibold text-[#7F879E]"
               >
                 Listings
-              </Link>
+              </CustomLink>
             </li>
             <li>
-              <Link
+              <CustomLink
+                title="FAQs page"
                 href="/faqs"
                 className="text-base font-semibold text-[#7F879E]"
               >
                 Company
-              </Link>
+              </CustomLink>
             </li>
             <li>
-              <Link
+              <CustomLink
+                title="Blog page"
                 href="/blog"
                 className="text-base font-semibold text-[#7F879E]"
               >
                 Blog
-              </Link>
+              </CustomLink>
             </li>
             <li>
-              <Link
+              <CustomLink
+                title="About page"
                 href="/about"
                 className="text-base font-semibold text-[#7F879E]"
               >
                 About Us
-              </Link>
+              </CustomLink>
             </li>
           </ul>
-          <Link
+          <CustomLink
+            title="Contact page"
             href="/contact"
             className="flex h-12 items-center justify-center rounded-xl bg-primary-1 px-6 py-3 font-semibold text-black-111"
           >
             Contact Us
-          </Link>
+          </CustomLink>
         </div>
         <button
           className="flex h-6 w-6 items-center justify-center lg:hidden"

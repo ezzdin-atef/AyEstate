@@ -1,8 +1,8 @@
 import { SearchIcon } from "@/assets/icons";
+import CustomLink from "@/components/common/custom-link/custom-link";
 import Button from "@/components/ui/button";
 import faqData from "@/data/faq.json";
 import { cn } from "@/lib/utils";
-import Link from "next/link";
 import React from "react";
 
 export default function Faqs() {
@@ -259,12 +259,13 @@ export default function Faqs() {
                 <p className="text-sm leading-6 text-[#7F879E] lg:text-lg lg:font-semibold">
                   {el.content}
                 </p>
-                <Link
+                <CustomLink
+                  title="Read More"
                   href="#"
                   className="mt-5 block font-bold text-primary-1 lg:mt-6 lg:text-lg"
                 >
                   Read More
-                </Link>
+                </CustomLink>
               </div>
             </details>
           ))}

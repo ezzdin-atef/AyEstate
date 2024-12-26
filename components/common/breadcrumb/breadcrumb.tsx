@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
-import Link from "next/link";
 import React from "react";
+import CustomLink from "../custom-link/custom-link";
 interface Props {
   items: {
     name: string;
@@ -18,9 +18,13 @@ export default function Breadcrumb(props: Props) {
           key={item.link + item.name}
           className="flex items-center gap-2 text-xs lg:text-base"
         >
-          <Link href={item.link} className="text-[#1D9E34]">
+          <CustomLink
+            title={item.name}
+            href={item.link}
+            className="text-[#1D9E34]"
+          >
             {item.name}
-          </Link>{" "}
+          </CustomLink>{" "}
           <svg
             width={12}
             height={13}
