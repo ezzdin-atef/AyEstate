@@ -1,6 +1,19 @@
 import Breadcrumb from "@/components/common/breadcrumb/breadcrumb";
 import ListingProperties from "@/components/feature/listing-sections/listing-properties/listing-properties";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Listing Page - AyEstate",
+  description:
+    "Find the perfect property that suits your lifestyle. Our real estate service offers unique selling propositions that set us apart from the competition. Find your perfect home today!",
+  openGraph: {
+    images: "/images/listing/1.jpg",
+  },
+  alternates: {
+    canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/properties`,
+  },
+};
 
 export default function ListingPage() {
   return (

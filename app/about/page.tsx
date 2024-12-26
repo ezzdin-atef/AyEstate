@@ -9,8 +9,21 @@ import {
 import CustomLink from "@/components/common/custom-link/custom-link";
 import CtaSection from "@/components/feature/home-sections/cta-section/cta-section";
 import Button from "@/components/ui/button";
+import { Metadata } from "next";
 import Image from "next/image";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "About US - AyEstate",
+  description:
+    "We’re a diverse group of software engineering with different skills who make things people love to use. We help the world’s most progressive brands solve problems and generate growth.",
+  openGraph: {
+    images: "/images/about/cover.jpg",
+  },
+  alternates: {
+    canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/about`,
+  },
+};
 
 export default function AboutUs() {
   return (

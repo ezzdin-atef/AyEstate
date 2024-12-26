@@ -6,8 +6,21 @@ import Button from "@/components/ui/button";
 import blogArticles from "@/data/blog.json";
 import popularArticles from "@/data/popular-articles.json";
 import recentArticles from "@/data/recent-articles.json";
+import { Metadata } from "next";
 import Image from "next/image";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Blog - AyEstate",
+  description:
+    "Stay updated with the latest real estate tips, market trends, and property insights on our blog.",
+  openGraph: {
+    images: "/images/blog/1.png",
+  },
+  alternates: {
+    canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/blog`,
+  },
+};
 
 export default function Blog() {
   return (

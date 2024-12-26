@@ -6,6 +6,27 @@ import recentArticles from "@/data/recent-articles.json";
 import Image from "next/image";
 import React from "react";
 
+type Props = {
+  params: Promise<{ id: string }>;
+};
+
+export async function generateMetadata({ params }: Props) {
+  const id = (await params).id;
+
+  return {
+    title:
+      "From $0 to $40 million: how a 10-year old orphan became a successful investor - AyEstate",
+    description:
+      "It can be a challenge to maintain balanced, healthy eating when you work from home. Try these 10 quick tips for healthy eating habits.",
+    openGraph: {
+      images: "/images/blog/1.png",
+    },
+    alternates: {
+      canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/blog/${id}`,
+    },
+  };
+}
+
 export default function BlogPostDetails() {
   return (
     <div className="container mx-auto px-5 py-[50px] lg:mb-[100px] lg:pt-[120px]">

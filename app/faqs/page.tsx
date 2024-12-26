@@ -3,7 +3,20 @@ import CustomLink from "@/components/common/custom-link/custom-link";
 import Button from "@/components/ui/button";
 import faqData from "@/data/faq.json";
 import { cn } from "@/lib/utils";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "FAQs - AyEstate",
+  description:
+    "Helping you is our priority. Our real estate service offers unique selling propositions that set us apart from the competition.",
+  openGraph: {
+    images: "/images/hero-section-image.png",
+  },
+  alternates: {
+    canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/faqs`,
+  },
+};
 
 export default function Faqs() {
   return (

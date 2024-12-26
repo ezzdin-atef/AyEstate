@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://ay-estate-six.vercel.app/sitemap.xml

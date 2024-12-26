@@ -1,7 +1,20 @@
 import Pagination from "@/components/common/pagination/pagination";
 import ArticleCard from "@/components/feature/blog/article-card/article-card";
 import recentArticles from "@/data/recent-articles.json";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Recent Blog - AyEstate",
+  description:
+    "Newest update article from AyEstate. Stay updated with the latest real estate tips, market trends, and property insights on our blog.",
+  openGraph: {
+    images: "/images/blog/7.png",
+  },
+  alternates: {
+    canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/blog`,
+  },
+};
 
 export default function RecentBlog() {
   return (

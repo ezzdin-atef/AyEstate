@@ -22,7 +22,7 @@ export const HomeHeroSection = () => {
 
         <div className="mt-12 flex justify-center lg:justify-end">
           <Image
-            src={"/images/hero-section-image-discover-your-dream-home.png"}
+            src={"/images/hero-section-image.png"}
             width={600}
             height={500}
             alt="hero image"

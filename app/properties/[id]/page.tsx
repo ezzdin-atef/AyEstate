@@ -3,6 +3,26 @@ import Button from "@/components/ui/button";
 import Image from "next/image";
 import React from "react";
 
+type Props = {
+  params: Promise<{ id: string }>;
+};
+
+export async function generateMetadata({ params }: Props) {
+  const id = (await params).id;
+
+  return {
+    title: "Luxury Beach Villa - AyEstate",
+    description:
+      "Experience the ultimate in beachfront luxury with breathtaking ocean views.",
+    openGraph: {
+      images: "/images/listing-details/cover.jpg",
+    },
+    alternates: {
+      canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/properties/${id}`,
+    },
+  };
+}
+
 export default function PropertiesDetails() {
   return (
     <div className="container mx-auto px-5">
