@@ -3,7 +3,7 @@ import React from "react";
 
 interface Props {
   htmlFor?: string;
-  children: React.ReactNode[];
+  children: React.ReactNode[] | React.ReactNode;
   className?: string;
 }
 

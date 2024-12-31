@@ -41,11 +41,15 @@ export default function ListingProperties() {
         </div>
         <div className="">
           <div className="flex items-center gap-2">
-            <Label className="mr-auto">
-              <span className="mr-1 hidden text-base text-[#818B9C] lg:block">
+            <div className="mr-auto">
+              <Label
+                htmlFor="sort-by"
+                className="mr-1 hidden text-base text-[#818B9C] lg:block"
+              >
                 Sort By:
-              </span>
+              </Label>
               <Select
+                id="sort-by"
                 name="sort-by"
                 onChange={(value) => {
                   console.log(value);
@@ -57,7 +61,7 @@ export default function ListingProperties() {
                   },
                 ]}
               />
-            </Label>
+            </div>
             <Button
               aria-label="Filters"
               size="icon"
@@ -90,6 +94,7 @@ export default function ListingProperties() {
           {properties.map((el) => (
             <PropertyCard
               key={el.id}
+              id={el.id}
               title={el.title}
               image={el.image}
               location={el.location}

@@ -1,9 +1,11 @@
 import { HeartIcon } from "@/assets/icons";
+import CustomLink from "@/components/common/custom-link/custom-link";
 import Image from "next/image";
 import React from "react";
 
 interface Props {
   image: string;
+  id: string;
   title: string;
   type: string;
   location: string;
@@ -32,7 +34,12 @@ export default function PropertyCard(props: Props) {
       </div>
       <div className="space-y-2">
         <h4 className="line-clamp-1 text-xs font-semibold lg:text-[22px] lg:leading-8">
-          {props.title}
+          <CustomLink
+            title={`Read more about ${props.title}`}
+            href={`/properties/${props.id}`}
+          >
+            {props.title}
+          </CustomLink>
         </h4>
         <div className="space-y-1">
           <p className="text-[10px] font-semibold lg:text-lg">{props.type}</p>

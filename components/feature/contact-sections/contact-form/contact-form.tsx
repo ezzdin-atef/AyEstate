@@ -24,48 +24,64 @@ export default function ContactForm() {
         }}
       >
         <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
-          <Label className="flex flex-col gap-[12px]">
-            <p className="w-full text-sm font-bold lg:text-base">
+          <div className="flex flex-col gap-[12px]">
+            <Label
+              htmlFor="name"
+              className="w-full text-sm font-bold lg:text-base"
+            >
               Your Name<span className="text-[#E60019]">*</span>
-            </p>
+            </Label>
             <Input
               type="text"
+              id="name"
               name="name"
               placeholder="Enter your name"
               className="flex h-[46px] w-full items-center rounded-2xl bg-[#F6F8F9] px-4 py-[12px] text-sm placeholder:text-[#7F879E] lg:h-[58px] lg:py-[18px]"
             />
-          </Label>
-          <Label className="flex flex-col gap-[12px]">
-            <p className="w-full text-sm font-bold lg:text-base">
+          </div>
+          <div className="flex flex-col gap-[12px]">
+            <Label
+              htmlFor="email"
+              className="w-full text-sm font-bold lg:text-base"
+            >
               Email<span className="text-[#E60019]">*</span>
-            </p>
+            </Label>
             <Input
               type="email"
+              id="email"
               name="email"
               placeholder="Enter your email"
               className="flex h-[46px] w-full items-center rounded-2xl bg-[#F6F8F9] px-4 py-[12px] text-sm placeholder:text-[#7F879E] lg:h-[58px] lg:py-[18px]"
             />
-          </Label>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
-          <Label className="flex flex-col gap-[12px]">
-            <p className="w-full text-sm font-bold lg:text-base">
+          <div className="flex flex-col gap-[12px]">
+            <Label
+              htmlFor="phone-number"
+              className="w-full text-sm font-bold lg:text-base"
+            >
               Phone Number
-            </p>
+            </Label>
             <Input
               type="text"
+              id="phone-number"
               name="phone number"
               placeholder="Enter your phone number"
               className="flex h-[46px] w-full items-center rounded-2xl bg-[#F6F8F9] px-4 py-[12px] text-sm placeholder:text-[#7F879E] lg:h-[58px] lg:py-[18px]"
             />
-          </Label>
-          <Label className="flex flex-col gap-[12px]">
-            <p className="w-full text-sm font-bold lg:text-base">
+          </div>
+          <div className="flex flex-col gap-[12px]">
+            <Label
+              htmlFor="sales-team-help"
+              className="w-full text-sm font-bold lg:text-base"
+            >
               How Can Our Sales Team Help?
               <span className="text-[#E60019]">*</span>
-            </p>
+            </Label>
             <Select
+              id="sales-team-help"
               options={[
                 {
                   label: "What you want",
@@ -75,28 +91,35 @@ export default function ContactForm() {
               className="flex h-[46px] w-full items-center rounded-2xl border-none bg-[#F6F8F9] px-4 py-[12px] text-sm text-[#7F879E] placeholder:text-[#7F879E] lg:h-[58px] lg:py-[18px]"
               onChange={(val) => console.log(val)}
             />
-          </Label>
+          </div>
         </div>
 
-        <Label className="flex flex-col gap-[12px]">
-          <p className="w-full text-sm font-bold lg:text-base">
+        <div className="flex flex-col gap-[12px]">
+          <Label
+            htmlFor="message"
+            className="w-full text-sm font-bold lg:text-base"
+          >
             Anything Else You’d Like Us To Know?
-          </p>
+          </Label>
           <textarea
-            name="name"
+            name="message"
+            id="message"
             placeholder="Type anything"
             className="flex h-[300px] w-full items-center rounded-2xl bg-[#F6F8F9] px-4 py-[12px] text-sm placeholder:text-[#7F879E] lg:h-[180px] lg:py-[18px]"
           />
-        </Label>
+        </div>
         <div className="grid grid-cols-1 gap-10 py-[12px] lg:grid-cols-2 lg:pt-[20px]">
-          <Label className="flex items-center gap-2 text-xs lg:gap-4 lg:text-base">
+          <div className="flex items-center gap-2 text-xs lg:gap-4 lg:text-base">
             <Input
               type="checkbox"
               name="agree-terms"
               className="flex-shrink-0"
+              id="agree-terms"
             />
-            <p>I agree to Loom&apos;s Terms of Service and Privacy Policy.</p>
-          </Label>
+            <Label htmlFor="agree-terms">
+              I agree to Loom&apos;s Terms of Service and Privacy Policy.
+            </Label>
+          </div>
 
           <div>
             <Button

@@ -60,21 +60,21 @@ function BestFilters() {
       <div className={cn("flex flex-col gap-3", isHidden && "hidden")}>
         <Label className="gap-2">
           <Input type="checkbox" name="option" />
-          <p className="flex items-center gap-1">
+          <span className="flex items-center gap-1">
             <StarIcon /> 4 stars or upper
-          </p>
+          </span>
         </Label>
         <Label className="gap-2">
           <Input type="checkbox" name="option" />
-          <p className="flex items-center gap-1">Luxury Building</p>
+          <span className="flex items-center gap-1">Luxury Building</span>
         </Label>
         <Label className="gap-2">
           <Input type="checkbox" name="option" />
-          <p className="flex items-center gap-1">Best Seller</p>
+          <span className="flex items-center gap-1">Best Seller</span>
         </Label>
         <Label className="gap-2">
           <Input type="checkbox" name="option" />
-          <p className="flex items-center gap-1">Discount</p>
+          <span className="flex items-center gap-1">Discount</span>
         </Label>
       </div>
     </div>
@@ -98,19 +98,19 @@ function LocationsFilters() {
       <div className={cn("flex flex-col gap-3", isHidden && "hidden")}>
         <Label className="gap-2">
           <Input type="checkbox" name="option" />
-          <p className="flex items-center gap-1">Bandung</p>
+          <span className="flex items-center gap-1">Bandung</span>
         </Label>
         <Label className="gap-2">
           <Input type="checkbox" name="option" />
-          <p className="flex items-center gap-1">Jakarta</p>
+          <span className="flex items-center gap-1">Jakarta</span>
         </Label>
         <Label className="gap-2">
           <Input type="checkbox" name="option" />
-          <p className="flex items-center gap-1">Bali</p>
+          <span className="flex items-center gap-1">Bali</span>
         </Label>
         <Label className="gap-2">
           <Input type="checkbox" name="option" />
-          <p className="flex items-center gap-1">Medan</p>
+          <span className="flex items-center gap-1">Medan</span>
         </Label>
         <button
           aria-label="Show all options"
@@ -140,7 +140,7 @@ function CategoriesFilters() {
       <div className={cn("flex flex-col gap-3", isHidden && "hidden")}>
         <Label className="gap-2">
           <Input type="checkbox" name="option" />
-          <p className="flex items-center gap-1">House</p>
+          <span className="flex items-center gap-1">House</span>
         </Label>
         <Label className="gap-2">
           <Input type="checkbox" name="option" />
@@ -148,11 +148,11 @@ function CategoriesFilters() {
         </Label>
         <Label className="gap-2">
           <Input type="checkbox" name="option" />
-          <p className="flex items-center gap-1">Apartment</p>
+          <span className="flex items-center gap-1">Apartment</span>
         </Label>
         <Label className="gap-2">
           <Input type="checkbox" name="option" />
-          <p className="flex items-center gap-1">Hotel</p>
+          <span className="flex items-center gap-1">Hotel</span>
         </Label>
         <button
           aria-label="Show all options"
