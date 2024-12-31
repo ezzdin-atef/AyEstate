@@ -192,8 +192,8 @@ function PriceRangeFilter() {
           currancies={["USD", "EGP"]}
           onChange={(value) => console.log(value)}
           value={{ currancy: "USD", value: 0 }}
-          id="min-price"
-          name="min-price"
+          id="max-price"
+          name="max-price"
           placeholder="Maximum price"
         />
         <div className="flex flex-wrap gap-3">

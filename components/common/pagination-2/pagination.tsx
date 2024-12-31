@@ -42,28 +42,16 @@ export default function PaginationStyle2(props: Props) {
         >
           1
         </button>
-        <button
-          aria-label="page"
-          className="flex h-11 w-11 items-center justify-center rounded-lg border border-[#E4E9EE] text-[#818B9C]"
-        >
+        <button className="flex h-11 w-11 items-center justify-center rounded-lg border border-[#E4E9EE] text-[#818B9C]">
           2
         </button>
-        <button
-          aria-label="page"
-          className="flex h-11 w-11 items-center justify-center rounded-lg border border-[#E4E9EE] text-[#818B9C]"
-        >
+        <button className="flex h-11 w-11 items-center justify-center rounded-lg border border-[#E4E9EE] text-[#818B9C]">
           3
         </button>
-        <div
-          aria-label="page"
-          className="flex h-11 w-11 items-center justify-center rounded-lg border border-[#E4E9EE] text-[#818B9C]"
-        >
+        <div className="flex h-11 w-11 items-center justify-center rounded-lg border border-[#E4E9EE] text-[#818B9C]">
           ...
         </div>
-        <button
-          aria-label="page"
-          className="flex h-11 w-11 items-center justify-center rounded-lg border border-[#E4E9EE] text-[#818B9C]"
-        >
+        <button className="flex h-11 w-11 items-center justify-center rounded-lg border border-[#E4E9EE] text-[#818B9C]">
           274
         </button>
       </div>

@@ -42,22 +42,13 @@ export default function Pagination(props: Props) {
         >
           1
         </button>
-        <button
-          aria-label="page"
-          className="flex h-11 w-11 items-center justify-center rounded-lg bg-[#F9F9F9] text-[#7F879E]"
-        >
+        <button className="flex h-11 w-11 items-center justify-center rounded-lg bg-[#F9F9F9] text-[#7F879E]">
           2
         </button>
-        <button
-          aria-label="page"
-          className="flex h-11 w-11 items-center justify-center rounded-lg bg-[#F9F9F9] text-[#7F879E]"
-        >
+        <button className="flex h-11 w-11 items-center justify-center rounded-lg bg-[#F9F9F9] text-[#7F879E]">
           3
         </button>
-        <button
-          aria-label="page"
-          className="flex h-11 w-11 items-center justify-center rounded-lg bg-[#F9F9F9] text-[#7F879E]"
-        >
+        <button className="flex h-11 w-11 items-center justify-center rounded-lg bg-[#F9F9F9] text-[#7F879E]">
           ...
         </button>
       </div>
