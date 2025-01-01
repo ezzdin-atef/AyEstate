@@ -144,7 +144,7 @@ function CategoriesFilters() {
         </Label>
         <Label className="gap-2">
           <Input type="checkbox" name="option" />
-          <p className="flex items-center gap-1">Villa</p>
+          <span className="flex items-center gap-1">Villa</span>
         </Label>
         <Label className="gap-2">
           <Input type="checkbox" name="option" />
