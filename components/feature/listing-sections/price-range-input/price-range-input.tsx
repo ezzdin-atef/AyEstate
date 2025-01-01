@@ -36,7 +36,7 @@ export default function PriceRangeInput(props: Props) {
             value: props.value.value,
           });
         }}
-        id={props.id}
+        id={props.id + "-select"}
       >
         {props.currancies.map((el) => (
           <option value={el} key={el}>
@@ -47,7 +47,7 @@ export default function PriceRangeInput(props: Props) {
       <input
         type="number"
         name={props.name}
-        id={props.id}
+        id={props.id + "-input"}
         className={cn(
           "w-full appearance-none border-none pl-3 placeholder:text-[#818B9C] focus:outline-none",
           props.inputClassName,
